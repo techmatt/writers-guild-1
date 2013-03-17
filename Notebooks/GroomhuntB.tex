@@ -1,0 +1,68 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{guildcamp1}
+\begin{document}
+
+\startnotebook{\nBrainDamage{}}
+
+\begin{page}{pre}
+This notebook is not transferable. You may open it when you see badge number 438.
+\end{page}
+
+\begin{page}{first}
+What? This man looks just like you! He has your face, your clothes, your voice! Is this a joke? Demand who he thinks he is. When he tells you his name, you may turn to \nbref{second}.
+\end{page}
+
+\begin{page}{second}
+That is impossible. This man is claiming to be you. He's trying to steal your identity! You think you've heard about that sort of thing on the news. You must prove that you are yourself. Quick, you must find as many of these items as possible:
+ 
+ \begin{enumerate} 
+  Your military ID because it has an image of your fingerprints on it . \(item \# 0192\)
+  A childhood photo of you. There is no way the impostor could recognize it. \(item \# 0156\)
+  Your cellphone. You haven't seen it all day. Maybe you misplaced it at the rehearsal dinner last night. \(item \# 0185\)
+  A tin soldier. This was a treasured family heirloom, but you haven't seen it in years -- not since \cScientist{} left you. \(item \# 0270\)
+  Your high blood pressure medication. Must be taken with water. \(item \# 0263\)
+  Your pocket watch. Your sense of time is terrible once you've had something to drink. \(item \# 0134\)
+  Your binoculars. You lent them to some guy in a hard hat the other day. \(item \# 0280\)}
+  \end{enumerate}
+  
+  At any time, you may choose to confront the impostor and demand that he identify the items you have obtained, then after his attempt, turn to \nbref{third}.
+  
+  If you have more items than the impostor at this time, increase your $\Omega$ score by 1.}
+\end{page}
+
+\begin{page}{third}
+He knows so much about your past. He must have done an incredible amount of research and interrogated your family. You'll have to see if they are okay later. But now, challenge him to recite your back account number.  There's no way he's found that out. If he answers correctly, turn to  \nbref{fourth}.
+\end{page}
+
+\begin{page}{fourth}
+He knows everything. In all of these material ways, he seems exactly like you. But your fiance, \cBride{} must surely know that you are the real one. After all, you love each other. Surely she will identify you as the real \cGroom{} if you ask her. Turn to \nbref{fifth} if she says you are real. Turn to \nbref{sixth} if she says you are not.}
+}
+\end{page}
+
+\begin{page}{fifth}
+Yes! You are the real you! Now, go deal with the impostor.
+\end{page}
+
+\begin{page}{sixth}
+  Lose one $\Omega$
+  
+  \end{page}
+
+\endnotebook
+
+\end{document}
