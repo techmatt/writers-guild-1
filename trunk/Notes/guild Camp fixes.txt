@@ -1,0 +1,26 @@
+Need more mechanics and goals to prevent good-guy mobs?
+
+If the teddy bear is openly known to be awesome, why do we need Detect Save State?
+	Proposed solution: Only allow the kid to use the teddy bear
+
+Simplify pick-pocket: no randomness, no item planting.
+
+Give aliens a mechanic to find each other.
+
+Rekey should be sketchy: decking mechanic?
+
+Active Alien:	Goals should be summary, not explanation
+(same for	Should have a mechanic or research notebook.
+Passive)	Ability/item to create blood samples.
+		Last goals should be an ability or a Psychlim
+
+Bride:		Wants more mechanics for her plots.
+		Some way to actually mechanic money from \cRival
+	
+Groom A and B need more directed plot.
+		Needs mempackets for Scavenger Hunt		
+
+Pastor needs more mechanized goals…
+
+Programmer 	memfold should be triggered on seeing an object.
+		Needs a goal with obvious direction
