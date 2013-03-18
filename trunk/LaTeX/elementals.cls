@@ -24,7 +24,7 @@
 %%
 %% When you change this, make sure the name of this file and the name
 %% of the game's environment variable both match it.  See ../README.
-\def\gameclassname{guildcamp1}
+\def\gameclassname{elementals}
 
 
 %%%%%
