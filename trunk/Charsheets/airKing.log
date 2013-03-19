@@ -1,0 +1,84 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2013.1.10)  19 MAR 2013 00:52
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**C:/Users/Acata/Desktop/Larps/writers-guild-1/Charsheets/airKing.tex
+(c:/Users/Acata/Desktop/Larps/writers-guild-1/Charsheets/airKing.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(c:/latex/GuildCamp/sgs-guild-camp-2012/LaTeX/guildcamp1.cls
+runsystem(echo \begingroup\catcode`\*0> TempWindowsEnvironmentVariable.tex)...e
+xecuted.
+
+runsystem(echo *catcode`*\=12>> TempWindowsEnvironmentVariable.tex)...executed.
+
+runsystem(echo *noexpand*gdef*gamepath{%guildcamp1%}*endgroup>> TempWindowsEnvi
+ronmentVariable.tex)...executed.
+
+
+(./TempWindowsEnvironmentVariable.tex)
+runsystem(del TempWindowsEnvironmentVariable.tex)...executed.
+
+
+(c:/latex/GuildCamp/sgs-guild-camp-2012/LaTeX/gametex.sty
+Document Class: guildcamp1 
+  --- Reality Check-In --- December 1st, 2012 ---
+\@multicount=\count79
+\@mapbox=\box26
+\@@@unique=\count80
+\@jobcnt=\count81
+(c:/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(c:/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))) 
+  Options: --> char --> sheet 
+  Packages: verbatim multicol comma multido alltt ulem
+  Graphics Packages: pstricks graphicx lscape
+  Symbol Packages: latexsym amssymb textcomp
+
+! LaTeX Error: File `pslatex.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.2 \begin
+          {document}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 962 strings out of 493488
+ 9708 string characters out of 3144727
+ 75983 words of memory out of 3000000
+ 4345 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 30i,0n,19p,237b,36s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
