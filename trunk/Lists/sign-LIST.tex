@@ -137,21 +137,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NEW{Sign}{\sBatterySource}{
+\NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
   \s\MYname	{A Chemical Stock Room}
-  \s\MYloc	{10-250}
-  \s\MYtext	{A lecture hall with large, sliding blackboards.}
+  \s\MYloc	{200-002}
+  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper, and 1 zinc (tear them up), then take a battery (\iBattery{\MYnumber{}}).}
+  \s\MYitems  {\multi{3}{\iBattery{}}}
   }
 
 %%NEED TO ASSIGN TO PLACES
+\NEW{Sign}{\sLocationCoverSheet}{
+  \s\MYname	{A Possible Location of Closest Contact.}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{It is possible that the conduit can be opened from this location. {\bf You must have an item capable of determining the ``Point of Closest Contact'' in order to find out.}} 
+}
 \NEW{SignSmall}{\sConduitOne}{
   \s\MYname	{A Possible Location of Closest Contact.}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{Some Number} %%Coordinate with RN that reveals numbers
+  \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active.} 
   }
   
 \NEW{SignSmall}{\sConduitTwo}{
   \s\MYname	{A Possible Location of Closest Contact.}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{Some Other Number} %%Coordinate with RN that reveals numbers
+  \s\MYtext	{Some Other Number} 
   }
