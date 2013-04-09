@@ -83,34 +83,38 @@
 
 \NEW{MemCover}{\mStress}{
   \s\MYname     {Stress}
-  \s\MYmems     {\mStressMSOne{},\mStressMSTwo{},\mStressEarthOne{},\mStressEarthTwo{},\mStressMSThree{},\mStressRetape{},\mStressExtreme{}}
+  \s\MYmems     {\mStressTime{},\mStressMSOne{},\mStressMSTwo{},\mStressEarthOne{},\mStressEarthTwo{},\mStressMSThree{},\mStressRetape{},
+  			  \mStressExtreme{}, \mStressGotRetaped{}}
 } 
 
+
+\NEW{MemPage}{\mStressTime}{
+  \s\MYname     { Open two hours into game }
+  \s\MYtext     { This conference is exciting, and you're having a blast.  However, it's still pretty tiring.  The effort of keeping going and dealing with all these people is somewhat stressful. }
+  }
+
 \NEW{MemPage}{\mStressMSOne}{
-  \s\MYname     { Open when you see badge number XXX }
-  \s\MYtext     { You recognize this \cMS{\human}, but you're not sure why.                
-    }
+  \s\MYname     { Open when you see badge number MADSCIENTIST }
+  \s\MYtext     { You recognize this \cMS{\human}, but you're not sure why. }
   }
 
 \NEW{MemPage}{\mStressMSTwo}{
-  \s\MYname     { Open if you talk to badge number XXX for at least three minutes }
-  \s\MYtext     { You feel both fear and a strange sense of obedience to this person, but you still can't remember where you have met before.
-    }
+  \s\MYname     { Open if you talk to badge number MADSCIENTIST for at least three minutes }
+  \s\MYtext     { You feel both fear and a strange sense of obedience to this person, but you still can't remember where you have met before. }
   }
 
 \NEW{MemPage}{\mStressEarthOne}{
   \s\MYname     { Open when you see an earth elemental }
-  \s\MYtext     { You haven't been working with earth elementals very much lately, but now that you've seen one, you get the bad feeling like you have had more interaction with them than you can remember.
-    }
+  \s\MYtext     { You haven't been working with earth elementals very much lately, but now that you've seen one, you get the bad feeling like you have had more interactions with them than you can remember. }
   }
 
 \NEW{MemPage}{\mStressEarthTwo} {
-  \s\MYname     { Open if you interact with badge number XXX }
+  \s\MYname     { Open if you interact with badge number MINION }
   \s\MYtext     { You feel a strange compulsion to take control of this elemental.  You issue a command to \cMinion{\them}, appropriate to the current situation.  If there are no immediately relevant commands, ask \cMinion{\them} to make you a sandwich.  The compulsion passes after you have made this command.  Obviously, this involuntary break in your self-control is distressing.  Roleplay accordingly. }
   }
 
 \NEW{MemPage}{\mStressMSThree} {
-  \s\MYname     { Open if you interact with badge number XXX for a third time }
+  \s\MYname     { Open if you interact with badge number MADSCIENTIST for a total of at least ten minutes  }
   \s\MYtext     { Your continued interaction with \cMS{} has triggered some kind of flashback.  
 
 During the flashback, you are not aware of what is going on around you.  Stand still, eyes glazed, and unresponsive to outside stimuli, for two minutes.  (You are effectively Knocked Out, even though you have not collapsed.) }
@@ -118,10 +122,18 @@ During the flashback, you are not aware of what is going on around you.  Stand s
 
 \NEW{MemPage}{\mStressRetape} {
   \s\MYname     { Open if you hear anyone suggest forceful or dangerously fast retaping }
-  \s\MYname     { Hell no!  You are distressed by the mere suggestion of such a thing.  You should object loudly and immediately. }
+  \s\MYtext     { Hell no!  You are distressed by the mere suggestion of such a thing.  You should object loudly and immediately. }
 }
    
 \NEW{MemPage}{\mStressExtreme} {
-  \s\MYname     { Open if you have had a flashback and also have experienced at least two significantly dis }
-  \s\MYtext     {  }
+  \s\MYname     { Open if you have had a flashback and also have experienced at least two stressful events }
+  \s\MYtext     { That was the last straw.  The excess stress at this event has gotten to you.  You are extremely anxious and jittery for the remainder of the conference.  Your fear of \cMS{} will cause you to flee from any room \cMS{\they} enters.  Further, you think that elementals will obey your every command.  Roleplay accordingly. }
+}
+
+\NEW{MemPage}{\mStressGotRetaped} {
+  \s\MYname     { Open if someone succeeds in retaping you }
+  \s\MYtext     { Well, they've succeeded in retaping you, but there are some unintended side effects.  You will follow orders, and be generally obedient to your new supervisor, 
+  but you are also now permanently insane and psychotic.  Feel free to take orders too literally (like a tricky genie might).  Further, you should also take every 
+  opportunity to screw up everything for everybody.  If you can find a way to cause a war or destroy the world, go for it.  Any ongoing or future consequences of stressful events have no further effect on 
+  your mental status. }
 }
