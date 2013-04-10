@@ -1,0 +1,97 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{elementals}
+\begin{document}
+
+%\item 
+%\item 
+
+\startnotebook{\nElectromagnet{}}
+
+\begin{page}{pre}
+This notebook is not transferable (TODO: Deal with ``transferrable on death''). You may open it to the first page at the start of the game.
+\end{page}
+
+\begin{page}{first}
+
+Blast these coils, always coming loose. And none of your tools are where they should be! Find a spool of tungsten wire, a wire tightener, and a wire stripper, then spend four minutes in your lab repairing the electromagnet's coils (spend two minutes if you can get someone else to help you).
+
+When you complete this step, you may turn to \nbref{second}.
+
+\end{page}
+
+\begin{page}{second}
+
+This sorry excuse for a convection reflow oven was broken by the earth elementals and can barely go up to 200 Celsius! You'll have to improvise. Find a silicone oven mitt and a fire elemental. Hold the electromagnet out and clearly visible within 2 ZOC of the fire elemental for at least ten seconds.
+
+When you complete this step, you may turn to \nbref{third}.
+
+\end{page}
+
+\begin{page}{third}
+
+Well that was a bit toasty, but the damage the magnet suffered in transit seem to be mostly repaired. You were confident that it should be ready now, but unfortunately it seems like the proximity to the Conduit has altered the elemental's physiology in ways you weren't expecting. You don't have time to do all the research yourself, that would take days -- you will have to track down one of the other scientists here instead and convince them to help you. Find another scientist and discuss elemental biology for two minutes while showing them your electromagnet.
+
+When you complete this step, hand them your ``C packet'' and tell them to open it. You may then turn to \nbref{fourth}.
+
+\end{page}
+
+\begin{page}{fourth}
+
+Oh, it was just a simple matter of modulating the phase transducers so they could be properly coupled to the mesionic sensor grid. In hindsight that should have been obvious, but what's done is done. You must ring the phase transducer several times whenever you use the electromagnet.
+
+Now for the dangerous part -- you need to gather real experimental data by testing your electromagnet on elementals. Convince elementals from two different factions to sit in your Chair of Science. Spend one minute strapping them in, then turn on your electromagnet by loudly ringing your phase transducer. You are not certain exactly what the effects will be, but they might get a bit lightheaded, so you should try to find elementals who are quite friendly, if you can. Once an elemental sits in your chair, hand them one of your ``E packets'' and tell them to open it.
+
+You may turn to \nbref{five} once you have gathered data on elementals from two different factions.
+
+\end{page}
+
+\begin{page}{five}
+
+That worked better than expected! You have excellent experimental results and are now ready to test the final component -- the connection to the Conduit itself. You don't have a good power source yet, so this should not have any significant impact on elementals, unless they stand too close to the electromagnet.
+
+Of course, opening the conduit, even for a moment, is no easy feat. You need to participate in a \emph{momentary opening} of the Conduit. Once you and your allies are ready, put the electromagnet on the cart and place your ``Conduit modifier: Electromagnet'' ability on the sheet. Periodically ring the phase transducer.
+
+While the Conduit is being opened, the electromagnet is on and attracting elementals. Warn any elementals working with you that they will need to stay at least 1ZOC away from you or the electromagnet or risk being sucked in. Whenever an elemental comes within 2 ZOC of either you or your electromagnet, you must inform them that feel like they are being pulled toward the electromagnet. If an elemental attacks you or touches the cart or the electromagnet, and a GM is not present, call a \emph{game halt}.
+
+You may turn to \nbref{six} once you have participated in a \emph{momentary opening} of the Conduit.
+
+\end{page}
+
+\begin{page}{six}
+
+Amazing! The power-response curve is impossibly favorable...you were expecting something linear or ideally quadratic, but it looks to be exponential or even hyper-exponential! With this kind of response, you might just be able to create a field that covers a sizable fraction of the planet. And for all the trouble it's caused, the Conduit is still a wondrous thing; while it was opening, you could feel the alien strangeness of elemental planes as if you were standing there.
+
+The remaining hurdle before you can hook your electromagnet up to a sustained opening of the Conduit is obtaining a large enough power source. While the magnet draws power from the elemental planes, it needs a sizable initial power surge to make the connection -- the more powerful the better. Elementals are partialyl made up of an extremely dense form of energy called \emph{elemental essence}. If you put an elemental in the Chair of Science and spend one minute using your electromagnet and the phase transducer, they must transfer a part of their essence to you, if they have any.
+
+You may turn to \nbref{seven} once you have any elemental essence, although the electromagnet will be stronger the more essence you acquire.
+
+\end{page}
+
+\begin{page}{seven}
+
+You are finally ready. Your electromagnet is completed, calibrated, and tested. You have elemental essence you can use as a power source.
+
+Attach your electromagnet on a \emph{terminal opening} of the Conduit by putting the electromagnet, the essence, and your ``Conduit modifier: Electromagnet'' ability on the cart. As with the momentary opening, elementals that come within 2 ZOC should be warned that they feel a very strong force pulling them toward the electromagnet, and if they attack you or touch the electromagnet you must find a GM or call a game halt.
+
+Remember to periodically ring the phase transducer. If this thing works, it should create a \emph{large} field effect that should pull in elementals and send them back to the elemental plane -- but you aren't yet certain just how large the radius will be.
+
+\end{page}
+
+\endnotebook
+
+\end{document}
