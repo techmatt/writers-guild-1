@@ -1,0 +1,15 @@
+\documentclass[notebook]{elementals} %% [notebook] or [greennotebook]
+\begin{document}
+
+\startnotebook{\nLearnAboutHumans{}}
+
+\begin{page}{first}
+You think it would be useful to use this meeting as an opportunity to learn more about humans.  At game start, you may  turn to \nbref{second}.
+\end{page}
+
+\begin{page}{second}
+You have heard \cDiplomat mention the terms "Azi" and "Cit" before, but you are not entirely sure what they mean- you think there might be different kinds of humans?
+
+\endnotebook
+
+\end{document}
