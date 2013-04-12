@@ -182,18 +182,20 @@
 \NEW{Item}{\iElectromagnet}{
   %this is an important item but I forget how to signify it as unstashable.
   %this item would probably be best if physrepped
-  \s\MYname     {A large elctromagnet}
+  \s\MYname     {A large electromagnet}
   \s\MYnumber   {145}
   \s\MYtext     {A bulky torus made of tightly-coiled wire.}
   \bulky{1}
+  \unstash{} %%like such I believe
 }
 
-\NEW{Item}{\iWhitePowder}{
+\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
   %this is an important item but I forget how to signify it as unstashable.
   \s\MYname     {A mysterious white powder}
   \s\MYnumber   {543}
   \s\MYtext     {You do not know what this substance is.}
-  \bulky{1}
+  \bulky{1} %%The white powder is 1 hand bulky? I though there was very little of it?!?
+  \unstash{}
 }
 
 \NEW{Item}{\iTablet}{
@@ -209,4 +211,23 @@
   \cMinion{}
   }
   \bulky{1}
+}
+
+%%Conduit Opening Items
+\NEW{Item}{\iZinc}{
+  \s\MYname	{A piece of Zinc}
+  \s\MYnumber	{}
+  \s\MYtext	{A strip of Zinc. It burns very brightly if lit on fire.}
+}
+
+\NEW{Item}{\iCopper}{
+  \s\MYname	{A piece of Copper}
+  \s\MYnumber	{}
+  \s\MYtext	{A strip of copper. It has a few teeth marks on it. Has an earth elemental been chewing on it?}
+}
+
+\NEW{Item}{\iBattery}{
+  \s\MYname	{A small, jury rigged battery}
+  \s\MYnumber	{}
+  \s\MYtext	{This battery can provide power to a machine for only a few minutes. Hopefully it will be enough.}
 }
