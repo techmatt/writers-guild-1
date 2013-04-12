@@ -1,0 +1,65 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{elementals}
+\begin{document}
+
+%\item 
+%\item 
+
+\startnotebook{\nBelt{}}
+
+\begin{page}{first}
+
+Before you headed out on this mission, you received an experimental and fairly bulky belt from a scientist named Galina Schwartz. Galina is the supervisor for \cScientist{\intro}, one of the Azi scientists attending the meeting with you. You briefly experimented with the belt and it seems very effective at deflecting certain types of energy. Unfortunately, Galina warned you that it is not yet ready for field use and is very likely to break down. However, she thought you might find it useful anyways; in return, she hopes to gather experimental data and has asked that you look after \cScientist{}.
+
+Unfortunately, upon arriving at the Conduit site, as Galina warned you the belt does not seem to be functioning correctly. However, she left you with detailed notes on how to repair it. Once the game starts, you may turn to \nbref{second}.
+
+\end{page}
+
+\begin{page}{second}
+
+The instructions say you need a \emph{Heisenberg compensator} and either a \emph{crystal geode} or a \emph{lava ember} to serve as a power source.
+
+When you have these items, turn to \nbref{third}. 
+
+\end{page}
+
+\begin{page}{third}
+
+You are trying your best to follow these instructions, but it's just technobabble to you. Luckily, there are a bunch of people here who speak the same language. You need to take these items to a scientist, then briefly describe the belt and show them this page. If they spend two minutes incorporating these items into the belt, destroy both items and turn to \nbref{fourth}.
+
+\end{page}
+
+\begin{page}{fourth}
+
+Now you need to calibrate the belt by having an elemental attack you while wearing it. The belt will not be active, so it is definitely advised to find an elemental willing to reduce the strength of their blow. You are free to resist the blow (if your CR is sufficient).
+
+Once an elemental has attacked you while you are wearing the belt, turn to \nbref{five}.
+
+\end{page}
+
+\begin{page}{five}
+
+The belt is now beeping with a bunch of green lights happily blinking, but the instructions say it requires one more step before it is fully functioning. Find a scientist to direct you to one of their experimental chairs, then have them point the holographic laser at you for 30 seconds while you are seated in the chair to activate the device.
+
+Once you have done this, remove the ``broken'' tag from the ``Elemental barrier belt'' item card. It is now operational and grants +3CR against elementals who attack you. The item can be used by any human, although it provides no defense against elemental enslavement.
+
+\end{page}
+
+\endnotebook
+
+\end{document}
