@@ -74,10 +74,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NEW{MemFold}{\mTest}{
-  \s\MYname	{Test Trigger}
-  \s\MYtext	{This is a Test of a fold-n-staple memory packet}
-  }
+%\NEW{MemFold}{\mTest}{
+%  \s\MYname	{Test Trigger}
+%  \s\MYtext	{This is a Test of a fold-n-staple memory packet}
+%  }
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -94,12 +94,12 @@
   }
 
 \NEW{MemPage}{\mStressMSOne}{
-  \s\MYname     { Open when you see badge number MADSCIENTIST }
+  \s\MYname     { Open when you see badge number \cMSnumber{} }
   \s\MYtext     { You recognize this \cMS{\human}, but you're not sure why. }
   }
 
 \NEW{MemPage}{\mStressMSTwo}{
-  \s\MYname     { Open if you talk to badge number MADSCIENTIST for at least three minutes }
+  \s\MYname     { Open if you talk to badge number \cMSnumber{} for at least three minutes }
   \s\MYtext     { You feel both fear and a strange sense of obedience to this person, but you still can't remember where you have met before. }
   }
 
@@ -109,12 +109,12 @@
   }
 
 \NEW{MemPage}{\mStressEarthTwo} {
-  \s\MYname     { Open if you interact with badge number MINION }
+  \s\MYname     { Open if you interact with badge number \cMinionNumber{} }
   \s\MYtext     { You feel a strange compulsion to take control of this elemental.  You issue a command to \cMinion{\them}, appropriate to the current situation.  If there are no immediately relevant commands, ask \cMinion{\them} to make you a sandwich.  The compulsion passes after you have made this command.  Obviously, this involuntary break in your self-control is distressing.  Roleplay accordingly. }
   }
 
 \NEW{MemPage}{\mStressMSThree} {
-  \s\MYname     { Open if you interact with badge number MADSCIENTIST for a total of at least ten minutes  }
+  \s\MYname     { Open if you interact with badge number \cMSnumber{} for a total of at least ten minutes  }
   \s\MYtext     { Your continued interaction with \cMS{} has triggered some kind of flashback.  
 
 During the flashback, you are not aware of what is going on around you.  Stand still, eyes glazed, and unresponsive to outside stimuli, for two minutes.  (You are effectively Knocked Out, even though you have not collapsed.) }
@@ -160,6 +160,6 @@ During the flashback, you are not aware of what is going on around you.  Stand s
   
 %%Trigger to Air King that he is probably willing to sign a treaty at this point
 \NEW{MemFold}{\mWhiteTech}{
-  \s\MYname	{Open if you receive item number \iWhite{\MYnumber{}} from a human.}
+  \s\MYname	{Open if you receive item number \iWhiteNumber{} from a human.}
   \s\MYtext	{Can humans manufacture this substance? If so, it is critical that you protect this source and keep it out of the hands of the other elementals. This technology is worth signing a treaty over.}
   }

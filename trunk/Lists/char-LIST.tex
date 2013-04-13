@@ -256,11 +256,13 @@
   \s\MYcr	{}
 }
 
+\def\cMinionNumber{000} % TODO: need badge number
+
 \NEW{PC}{\cMinion}{ %%Earth minion
    \s\MYname	{Skarn} %a kind of calcium-bearing silicate
    \s\MYfile	{minion.tex}
    \s\MYsex      {\male}
-   \s\MYnumber	{}
+   \s\MYnumber	{\cMinionNumber{}}
    \s\MYdesc     {A smallish masculine earth elemental}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
@@ -279,7 +281,7 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{\gSealingLocations}
+  \s\MYgreens	{\gSealingLocations{}}
   \s\MYabils	{\aEnslave{}}
   \s\MYitems	{}
   \s\MYwhites	{}
@@ -366,17 +368,19 @@
   \s\MYcr	{}
  }
  
+\def\cMSnumber{000}%filler number atm
+
 \NEW{PC}{\cMS}{
    \s\MYname	{Sofia Alexandrov}
    \s\MYfile	{madScientist.tex}
    \s\MYsex      {\female}
-   \s\MYnumber	{000}%filler number atm
+   \s\MYnumber	{\cMSnumber{}}
    \s\MYdesc     {}  
     
   \s\MYblues	{\bHumanHistory{}}
   \s\MYgreens	{\nEnslavementResearch{} \gEthics{}}
   \s\MYabils	{\aWorkConduit{} \aMadness{}}
-  \s\MYitems	{\iTablet{} \iTricorder}
+  \s\MYitems	{\iTablet{} \iTricorder{}}
   \s\MYwhites	{}
   \s\MYmems {}
   \s\MYcr	{}

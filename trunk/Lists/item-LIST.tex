@@ -112,62 +112,63 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NEW{Item}{\iTest}{
-  \s\MYname	{Test Item}
-  \s\MYnumber	{0000}
-  \s\MYtext	{A Test Item Card}
-  }
-
-\NEW{ItemPacket}{\iTestPacket}{
-  \s\MYname	{Test Item}
-  \s\MYnumber	{0000}
-  \s\MYtext	{A Test Item with a big red button.  Open packet if
-		you press the big red button.}
-  \s\MYcontents	{The item beeps at you.}
-  }
-
-\NEW{ItemFold}{\iTestFold}{
-  \s\MYname	{Test Food}
-  \s\MYnumber	{0000}
-  \s\MYtext	{open if you eat}
-  \s\MYcontents	{It tastes yummy.}
-  }
-
-\NEW{ItemEnvelope}{\iTestEnvelope}{
-  \s\MYname	{Test Food}
-  \s\MYnumber	{0000}
-  \s\MYtext	{open if you eat}
-  \s\MYcontents	{It tastes yummy.}
-  }
-
-\NEW{ItemLabel}{\iTestLabel}{
-  \s\MYname	{Test Gun Label}
-  \s\MYnumber	{0000}
-  \s\MYtext	{Disc gun, loadable to 20 shots.}
-  }
-
-\NEW{Item}{\iWhatzit}{
-  \s\MYname	{Whatzit}
-  \s\MYnumber	{12345}
-  \s\MYtext	{If you press it, open packet a.  If you twirl it, open
-		packet b.  If you pull it, open packet c.}
-  \bulky	{1}
-  \s\MYsigns	{\signstrip{a}{it goes ``beep.''}
-		\signstrip{b}{it goes ``whoop.''}
-		\signstrip{c}{it goes ``bang.''}
-		}
-  \s\MYabils	{\ability{Stop Crying}{By futzing with the Whatzit, you
-		can make babies stop crying.}{I make the baby stop
-		crying.}
-		}
-  }
+%\NEW{Item}{\iTest}{
+%  \s\MYname	{Test Item}
+%  \s\MYnumber	{0000}
+%  \s\MYtext	{A Test Item Card}
+%  }
+%
+%\NEW{ItemPacket}{\iTestPacket}{
+%  \s\MYname	{Test Item}
+%  \s\MYnumber	{0000}
+%  \s\MYtext	{A Test Item with a big red button.  Open packet if
+%		you press the big red button.}
+%  \s\MYcontents	{The item beeps at you.}
+%  }
+%
+%\NEW{ItemFold}{\iTestFold}{
+%  \s\MYname	{Test Food}
+%  \s\MYnumber	{0000}
+%  \s\MYtext	{open if you eat}
+%  \s\MYcontents	{It tastes yummy.}
+%  }
+%
+%\NEW{ItemEnvelope}{\iTestEnvelope}{
+%  \s\MYname	{Test Food}
+%  \s\MYnumber	{0000}
+%  \s\MYtext	{open if you eat}
+%  \s\MYcontents	{It tastes yummy.}
+%  }
+%
+%\NEW{ItemLabel}{\iTestLabel}{
+%  \s\MYname	{Test Gun Label}
+%  \s\MYnumber	{0000}
+%  \s\MYtext	{Disc gun, loadable to 20 shots.}
+%  }
+%
+%\NEW{Item}{\iWhatzit}{
+%  \s\MYname	{Whatzit}
+%  \s\MYnumber	{12345}
+%  \s\MYtext	{If you press it, open packet a.  If you twirl it, open
+%		packet b.  If you pull it, open packet c.}
+%  \bulky	{1}
+%  \s\MYsigns	{\signstrip{a}{it goes ``beep.''}
+%		\signstrip{b}{it goes ``whoop.''}
+%		\signstrip{c}{it goes ``bang.''}
+%		}
+%  \s\MYabils	{\ability{Stop Crying}{By futzing with the Whatzit, you
+%		can make babies stop crying.}{I make the baby stop
+%		crying.}
+%		}
+%  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\def\iWhiteNumber{543}
   
 \NEW{ItemFold}{\iWhite}{
   \s\MYname	{White}
-  \s\MYnumber	{}
+  \s\MYnumber	{\iWhiteNumber}
   \s\MYtext	{open if you eat}
   \s\MYcontents	{Whatever the effects of White are.}
   }
@@ -192,7 +193,7 @@
 \NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
   %this is an important item but I forget how to signify it as unstashable.
   \s\MYname     {A mysterious white powder}
-  \s\MYnumber   {543}
+  \s\MYnumber   {\iWhiteNumber}
   \s\MYtext     {You do not know what this substance is.}
   \bulky{1} %%The white powder is 1 hand bulky? I though there was very little of it?!?
   \unstash{}
