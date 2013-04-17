@@ -48,7 +48,7 @@
 
 \NEW{Place}{\pGM}{
   \s\MYname {Owned by GMs}
-  \s\MYsigns{}
+  \s\MYsigns{\sLocationCoverSheet{} }
   \s\MYgreens{\gActiveConduitLocations{}}
   \s\MYitems  {}
 } %% GMS have copy of critical items in case they get lost.
@@ -60,13 +60,13 @@
 
  \NEW{Place}{\pGDLab}{
    \s\MYname	{Room -002}%%near human HQ
-   \s\MYsigns	{\sBatterySource{}}
+   \s\MYsigns	{\sBatterySource{} \sRaidGD{}}
    \s\MYitems	{}
    }
   
 \NEW{Place}{\pAziLab}{
   \s\MYname	{Room -002}%%near human HQ
-  \s\MYsigns	{\sBatterySource{}}
+  \s\MYsigns	{\sBatterySource{} \sRaidSci{}}
   \s\MYitems	{}
   }
   
@@ -90,8 +90,8 @@
   
 \NEW{Place}{\pMSLab}{
   \s\MYname	{-015}%%Locked door from demagogue
-	\s\MYsigns	{\sBatterySource{}}
-	\s\MYgreens {\gLockedDoorAccess{}}
+	\s\MYsigns	{\sBatterySource{} \sRaidMS{} \sLockedDoor{}}
+	\s\MYgreens {}
   \s\MYitems	{}
   }
   
