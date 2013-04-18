@@ -137,19 +137,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
-  \s\MYname	{A Chemical Stock Room}
-  \s\MYloc	{200-002}
-  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}).} If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.
-  \s\MYitems  {\multi{3}{\iBattery{}}}
-  }
-
+%%Cart Signs
 \NEW{Sign}{\sConduitLocatingNumber}{
   \s\MYname	{Machine Display}
   \s\MYloc	{}
   \s\MYtext	{{\Huge 487}}
 }
 
+%%Conduit location signs
 %%need to assign to locations
 \NEW{Sign}{\sLocationCoverSheet}{
   \s\MYname	{A Possible Location of Closest Contact.}
@@ -157,9 +152,8 @@
   \s\MYtext	{It is possible that the conduit can be opened from this location. {\bf You must have an item capable of determining the ``Point of Closest Contact'' in order to find out.}} 
 }
 
-%%Some error about \noalign
 \NEW{SignMedium}{\sConduitOne}{
-  \s\MYname	{A Possible Location of Closest Contact.}
+  \s\MYname	{A Possible Location of Closest Contact}
   \s\MYloc	{}%%TBD
   \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active.
   
@@ -177,7 +171,7 @@
   }
   
 \NEW{SignMedium}{\sConduitTwo}{
-  \s\MYname	{A Possible Location of Closest Contact.}
+  \s\MYname	{A Possible Location of Closest Contact}
   \s\MYloc	{}%%TBD
   \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active.
   
@@ -193,8 +187,10 @@
   5:30-6:00  & 9213 \\ \hline
 \end{tabular}  } 
   }
-%%Need to make the other 16 signs obv. but I have other things to do right now. this will be done by sign due-date
-  
+%%Need to make the other 14 signs obv. but I have other things to do right now. this will be done by sign due-date
+
+%%GD Lab Signs 
+  %no location assigned
 \NEW{SignSmall}{\sRaidGD}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
   \s\MYname	{\cGD{}'s lab space}
@@ -205,7 +201,10 @@
   
   } 
   }
-  
+
+
+%%Azi Sci Lab
+  %no location assigned
   \NEW{SignSmall}{\sRaidSci}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
   \s\MYname	{\cScientist{}'s lab space}
@@ -216,7 +215,9 @@
   
   } 
   }
-  
+
+%%Mad Scientist Lab Signs
+  %no location assigned
   \NEW{SignSmall}{\sRaidMS}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
   \s\MYname	{\cMS{}'s lab space}
@@ -227,18 +228,32 @@
   
   } 
   }
-  
+
 \NEW{Sign}{\sLockedDoor}{
   \s\MYname	{A Steel Reinforced, Locked Door}
   \s\MYloc	{-015}
   \s\MYtext	{This steel door is locked.
   
-  {\Large You may not pass unless you know otherwise.}
-  
   There are two ways to pass this door:
 \begin{enumerate}
  \item Possess the appropriate key (item number: \iLabKey{\MYnumber}).
- \item You may hit the door with a {\bf CR of 10} or greater. If you choose to do so, you must write ``Broken'' on the sign indicating that the door is locked. Anyone may now freely pass into the room since the door has been broken down. {\bf Further,} elementals that participate in breaking the door down must write their elemental type on the back of sheet since this action leaves elemental residue on the door. Anyone possessing a \iTricorder{} with ``Detect Elemental Residue'' functionality may look under the sheet to learn the type(s) of elementals that participated in breaking the door down.
+ \item Hit the door with a {\bf CR of 10} or greater. If you choose to do so, you must write ``Broken'' on the sign indicating that the door is now unlocked. Anyone may now freely pass into the room since the door has been broken down. {\bf Further,} elementals that participate in breaking the door down must write their elemental type on the back of sheet since this action leaves elemental residue on the door. Anyone possessing a \iTricorder{} with ``Detect Elemental Residue'' functionality may look under the sheet to learn the type(s) of elementals that participated in breaking the door down.
 \end{enumerate}}
+  \s\MYitems {}
+}
+
+%%in all 3 labs
+\NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
+  \s\MYname	{A Chemical Stock Room}
+  \s\MYloc	{200-002}
+  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}).} If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.
+  \s\MYitems  {\multi{3}{\iBattery{}}}
+  }
+
+%%Kitchen Signs
+\NEW{Sign}{\sSink}{
+  \s\MYname	{The Kitchen Sink}
+  \s\MYloc	{-030}
+  \s\MYtext	{This is a stainless steel kitchen sink.}
   \s\MYitems {}
 }
