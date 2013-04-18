@@ -128,19 +128,24 @@ This information is transferable. You may freely tell other characters how to wo
 \NEW{Abil}{\aEnslave}{
   \s\MYname	{Enslavement}
   \s\MYtext	{I attempt to enslave you. This action is only interruptible by characters who are not the target of this ability.}
-  \s\MYeffect	{This ability allows you attempt to enslave someone. You may attempt to enslave humans and elementals of a lower rank than you in your same faction. (Note: If an elemental of a different faction, or an elemental of lower rank within your faction, attempts to enslave you via this ability, simply say ``resist'')
-  If you would like to enslave someone, incant ``I attempt to enslave you 1'', ``I attempt to enslave you 2'', etc. up to a count of 10. This action is interruptible by anyone except your target (your target cannot interrupt the action). Since this is not a CR based attack, your target cannot resist unless they know otherwise. Your target may however attack you with a CR based attack. If you are able to resist the attack, you may do so and continue your incantation as if you had not been attacked. (If you were at ``I attempt to enslave you 4'' when your target attacked you, you may say ``resist'' and then ``I attempt to enslave you 5'' etc.).
-  If your target successfully resists, or if you are interrupted by someone else, your attempt immediately fails.
-  If you successfully enslave your target, they are compelled to do as you ask for 5 minutes. You can compel your target to perform any action that is not a suicide. You can compel ask your target to discuss a given topic. You may {\bf not} compel your target to reveal specific information. (``Tell me about this machine'' is a valid command, ``Tell me exactly what you plan to do with this machine'' is not.)
-  {\bf Regardless of whether your attempt to enslave someone is successful or not, this ability has a 15 minute cool down before it can be used again.}
-  }
+  \s\MYeffect	{This ability allows you attempt to enslave someone. Refer to the associated greensheet for details}
+  \s\MYgreens	{\gEnslave{}}
 }
+
+%\NEW{Abil}{\aSpecial}{
+%  \s\MYname	{Special Powers}
+%  \s\MYtext	{You have special powers, as detailed in your \gTest{}
+%		greensheet.}
+%  \s\MYeffect	{I have special powers!}
+%  \s\MYgreens	{\gTest{}}
+%  \suite
+%  }
 
 %%Azi can resist enslavement
 \NEW{Abil}{\aResistEnslave}{
   \s\MYname	{Resist Enslavement}
   \s\MYtext	{I resist your attempt to enslave me.}
-  \s\MYeffect	{This ability allows you resist enslavement by elementals via the \aEnslave{} ability. If you choose to, you can resist enslavement via this ability. You do not have to do so.
+  \s\MYeffect	{This ability allows you resist enslavement by elementals who use the \aEnslave{} ability on you. If you choose to, you can resist enslavement via this ability. You do not have to do so.
   }
 }
 
