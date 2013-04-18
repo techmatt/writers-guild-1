@@ -152,10 +152,10 @@
   \s\MYtext	{It is possible that the conduit can be opened from this location. {\bf You must have an item capable of determining the ``Point of Closest Contact'' in order to find out.}} 
 }
 
-\NEW{SignMedium}{\sConduitOne}{
+\NEW{Sign}{\sConduitOne}{
   \s\MYname	{A Possible Location of Closest Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active.
+  \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -164,16 +164,16 @@
   3:00-3:30 & 9826 \\ \hline
   3:30-4:00 & 1820 \\ \hline
   4:00-4:30 & 9291 \\ \hline
-  4:30-5;00 & 1276 \\ \hline
+  4:30-5:00 & 1276 \\ \hline
   5:00-5:30 & 7865 \\ \hline
   5:30-6:00 & 9844 \\ \hline
 \end{tabular}  } 
   }
   
-\NEW{SignMedium}{\sConduitTwo}{
+\NEW{Sign}{\sConduitTwo}{
   \s\MYname	{A Possible Location of Closest Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active.
+  \s\MYtext	{To determine if this is the current location of closest contact, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -191,9 +191,17 @@
 
 %%GD Lab Signs 
   %no location assigned
-\NEW{SignSmall}{\sRaidGD}{
+  \NEW{Sign}{\sGDLab}{
+  \s\MYname	{Katherine Strauss' lab space}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{This is a laboratory filled with a wide array of complex and only semi-portable machinery and equipment. It has evidently been setup in considerable haste. You cannot interact with this sign unless you know otherwise.
+  
+  } 
+  }
+  
+\NEW{Sign}{\sRaidGD}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
-  \s\MYname	{\cGD{}'s lab space}
+  \s\MYname	{Katherine Strauss' lab space}
   \s\MYloc	{}%%TBD
   \s\MYtext	{You scour through the lab's computers and experimental setups. You are fairly confident that \cGD{} is building a device that will try to send *all* the elementals through the Conduit. The core component of this device is an electromagnet, although it can apparently only function when hooked up to an open connection to the elemental planes. It also requires considerable amounts of power to function.
   
@@ -203,11 +211,18 @@
   }
 
 
+\NEW{Sign}{\sSciLab}{
+  \s\MYname	{Percy Bentz's lab space}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{Beakers, test tubes, and chemical samples clutter the area. You cannot interact with this sign unless you know otherwise. 
+  } 
+  }
+  
 %%Azi Sci Lab
   %no location assigned
-  \NEW{SignSmall}{\sRaidSci}{
+  \NEW{Sign}{\sRaidSci}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
-  \s\MYname	{\cScientist{}'s lab space}
+  \s\MYname	{Percy Bentz's lab space}
   \s\MYloc	{}%%TBD
   \s\MYtext	{You scour the lab's computers and experimental setups. \cScientist{} keeps very meticulous notes and it is easy to follow \cScientist{\their} line of work. After discovering a strange white powder, \cScientist{} began investigating its properties. It appears to be tightly connected to the elemental biological process, and is possibly related to the steady loss of the elemental's energy levels. There does not appear to be much else that \cScientist{} has been working on lately, besides some recently published papers.
   
@@ -216,13 +231,20 @@
   } 
   }
 
+\NEW{Sign}{\sMSLab}{
+  \s\MYname	{Sofia Alexandrov's lab space}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{Throughout this room are hastily setup computers and mechanical apparatus in various stages of assembly. You cannot interact with this sign unless you know otherwise. 
+  } 
+  }
+  
 %%Mad Scientist Lab Signs
   %no location assigned
-  \NEW{SignSmall}{\sRaidMS}{
+  \NEW{Sign}{\sRaidMS}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
-  \s\MYname	{\cMS{}'s lab space}
+  \s\MYname	{Sofia Alexandrov's lab space}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{You scour the lab's computers and experimental setups. There is quite a lot of highly encrypted or hastily erased data here, but you can still manage to recover some of the projects. \cMS{} is primarialy researching the process by which elementals enslave humans or elementals, and is trying to replicate it. So far as you can tell, the focus is only on enslaving elementals and not humans. So far, \cMS{\they} have managed to create a prototype device in the form of a long rod that can control very weak elementals, but there is also considerable work into Azi tape. \cMS{} has apparently created a new type of tape that can train Azi to enslave much more powerful elementals, although in its current form such tape is very dangerous (and illegal) to use. There is some evidence suggesting that a prototype version of this tape has already been experimented with several years ago.
+  \s\MYtext	{You scour the lab's computers and experimental setups. There is quite a lot of highly encrypted or hastily erased data here, but you can still manage to recover some of the projects. \cMS{} is primarily researching the process by which elementals enslave humans or elementals, and is trying to replicate it. So far as you can tell, the focus is only on enslaving elementals and not humans. So far, \cMS{\they} have managed to create a prototype device in the form of a long rod that can control very weak elementals, but there is also considerable work into Azi tape. \cMS{} has apparently created a new type of tape that can train Azi to enslave much more powerful elementals, although in its current form such tape is very dangerous (and illegal) to use. There is some evidence suggesting that a prototype version of this tape has already been experimented with several years ago.
   
   \emph{If \cMS{} is dead, you should contact a GM now.}
   
