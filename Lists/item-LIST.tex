@@ -176,22 +176,20 @@
   \unstash{}
   }
 
-\NEW{ItemFold}{\iMintIceCream}{
+\NEW{ItemFold}{\iMintIceCream}{%%Freezer
   \s\MYname     {Mint Chocolate-Chip Ice Cream}
   \s\MYnumber   {}
-  \s\MYtext     {open if you eat}
+  \s\MYtext     {Open if you eat.}
   \s\MYcontents {Mm, minty chocolately goodness.}
 }
 
-\NEW{Item}{\iElectromagnet}{
-  %this is an important item but I forget how to signify it as unstashable.
-  %this item would probably be best if physrepped
+\NEW{Item}{\iElectromagnet}{%%GD
   \s\MYname     {A large electromagnet}
   \s\MYnumber   {145}
   \s\MYtext     {A bulky torus made of tightly-coiled wire.}
   \physrepped{}
   \bulky{1}
-  \unstash{} %%like such I believe
+  \unstash{}
 }
 
 %%\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
@@ -202,7 +200,7 @@
 %  \unstash{}
 %}
 
-\NEW{Item}{\iTablet}{
+\NEW{Item}{\iTablet}{%%MS
   \s\MYname	{A stone tablet}
   \s\MYnumber	{101}
   \s\MYtext		{This is a heavy stone tablet, with writing inscribed into it.  It reads: \\
@@ -219,56 +217,56 @@
 }
 
 %%Conduit Opening Items
-\NEW{Item}{\iZinc}{
+\NEW{Item}{\iZinc}{%%pile of shiny
   \s\MYname	{A piece of Zinc}
   \s\MYnumber	{}
-  \s\MYtext	{A strip of Zinc. It burns very brightly if lit on fire.}
+  \s\MYtext	{A strip of Zinc. It is highly reflective.}
 }
 
-\NEW{ItemFold}{\iCopper}{
+\NEW{ItemFold}{\iCopper}{%%Malachite
   \s\MYname	{A piece of Malachite}
   \s\MYnumber	{}
-  \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item}
+  \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item.}
   \s\MYcontents	{This item is now a strip of copper.}
 }
 
-\NEW{Item}{\iBattery}{
+\NEW{Item}{\iBattery}{%%Chemical Stock Rooms (3)
   \s\MYname	{A small, jury rigged battery}
   \s\MYnumber	{}
   \s\MYtext	{This battery can provide power to a machine for only a few minutes. Hopefully it will be enough.}
 }
 
 %%Tricorder, need to rename obviously
-\NEW{Item}{\iTricorder}{
+\NEW{Item}{\iTricorder}{%%GD and MS
   \s\MYname	{Tricorder}
   \s\MYnumber	{}
   \s\MYtext	{A small, hand-held machine. This machine is designed to collect data on elementals in various ways. Refer to the associated research notebook for current functionality, and ways to research additional functionality.}
-  %%\s\MYitems{\nTricorder{}}
 }
 
 %%leader's anti enslavement shield. he can of course give it to whoever he chooses
-\NEW{Item}{\iEleShield}{
+\NEW{Item}{\iEleShield}{%%Leader
   \s\MYname	{Prototype Anti-Enslavement Shield}
   \s\MYnumber	{}
   \s\MYtext	{This is a prototype of a machine to allow Cits to resist elemental enslavement. Once every 30 minutes, this machine can be activated to resist elemental enslavement for 2 minutes. During the cool-down period, the machine must also be reset before it can be used again. To reset the shield, a scientist must devote 1 minute to fixing it (role-play accordingly).}
 }
 
 %%Lab key door for MS lab. Dema also has a copy
-\NEW{Item}{\iLabKey}{
+\NEW{Item}{\iLabKey}{%%MS and Dema
   \s\MYname	{A key to the locked door}
   \s\MYnumber	{}
   \s\MYtext	{This key allows you to pass freely in and out of room -015.}
 }
 
 %%Sealing the Conduit Locations Items
-\NEW{Item}{\iVial}{
+\NEW{Item}{\iVial}{%%Glassware cabinet in Human HQ
   \s\MYname	{A small glass vial}
   \s\MYnumber	{}%%Renumber later please
   \s\MYtext	{This vial is perfect for putting small volumes of liquids in.}
 }
 
-\NEW{Item}{\iSyringe}{
+\NEW{Item}{\iSyringe}{%%Lab Ruins | Pile of TOols
   \s\MYname	{A Syringe}
   \s\MYnumber	{}%%Renumber later please
   \s\MYtext	{This syringe in sufficient for drawing blood from a human or elemental.}
 }
+
