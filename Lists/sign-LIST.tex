@@ -197,25 +197,6 @@
   } 
 }
 
-\NEW{Sign}{\sGDLabChair}{
-  \s\MYname	{A Metal Chair}
-  \s\MYloc	{}%%TBD
-  \s\MYtext	{This chair has numerous wires running from it to near-by monitors. There also wrist and ankle cuffs for securing the test subject. 
-  
-  The chair crucial for certain experiments. It is bolted to the floor and cannot be moved or destroyed.
-  
-  \emph{If a player is instructed to sit in the chair, the should role play accordingly.}
-  } 
-}
-  
-\NEW{Sign}{\sGDLabBend}{
-  \s\MYname	{A Wooden Lab Bench}
-  \s\MYloc	{-002}
-  \s\MYtext	{This bench is littered with items relevant to doing scientific research.
-  } 
-  \s\MYitems{\iPhaseTransducer{}}
-}
-  
 \NEW{Sign}{\sRaidGD}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
   \s\MYname	{Katherine Strauss' lab space}
@@ -226,6 +207,32 @@
   } 
 }
 
+\NEW{Sign}{\sGDLabChair}{
+  \s\MYname	{The Chair of Science.}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{A metal chair. This chair has numerous wires running from it to near-by monitors. There also wrist and ankle cuffs for securing the test subject. 
+  
+  The chair crucial for certain experiments. It is bolted to the floor and cannot be moved or destroyed.
+  
+  \emph{If a player is instructed to sit in the chair, the should role play accordingly.}
+  } 
+}
+  
+\NEW{Sign}{\sGDLabBench}{
+  \s\MYname	{A Wooden Lab Bench}
+  \s\MYloc	{-002}
+  \s\MYtext	{This bench is littered with items relevant to doing scientific research.
+  } 
+  \s\MYitems{\iPhaseTransducer{}}
+}
+
+\NEW{Sign}{\sHighResMass}{
+  \s\MYname	{A High Resolution Mass Spectrometer}
+  \s\MYloc	{-002}
+  \s\MYtext	{This machine is great for doing scientific research that requires high resolution.} 
+  \s\MYitems{}
+}
+  
 %%Azi Sci Lab
 \NEW{Sign}{\sSciLab}{
   \s\MYname	{Percy Bentz's lab space}
@@ -243,7 +250,26 @@
   \emph{If \cScientist{} is dead, you should contact a GM now.}
   
   } 
-  }
+}
+
+\NEW{Sign}{\sAziSciLabBench}{
+  \s\MYname	{A Wooden Lab Bench}
+  \s\MYloc	{-002}
+  \s\MYtext	{This bench is littered with items relevant to doing scientific research. 
+  
+  {\bf You cannot interact with this sign unless you know otherwise.}
+  } 
+  \s\MYitems{\iTransmogrifier{} {\multi{10}{\iElementium{}}}}%%Elementium lives in the ``A'' Packet.
+}
+
+\NEW{Sign}{\sTransmogrifier}{
+  \s\MYname	{A Transmogrifier}
+  \s\MYloc	{-002}
+  \s\MYtext	{An overly-complicated device that funnels a large set of lasers into a central vacuum chamber. 
+  
+  {\bf You cannot interact with this device unless you know otherwise.}} 
+  \s\MYitems{\multi{10}{\iWhite{}}}%%White lives in the ``A'' Packet.
+}
 
 %%Mad Scientist Lab Signs
 \NEW{Sign}{\sMSLab}{
@@ -292,7 +318,7 @@
   \s\MYtext	{There is a Caretaker's cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily much of the caretaker equipment is still here.
   
   {\bf If you would like to take something from the cottage, place 1 hand on this sign for 30 seconds, then take the item of your choice.}}
-  \s\MYitems  {\iWireTightener{} \multi{3}{\iLye{}}}
+  \s\MYitems  {\multi{3}{\iLye{}}}
 }
 
 %%Cellar | Earth HQ
@@ -378,7 +404,7 @@
   \s\MYtext	{There is a huge pile of scrap metal here. Air elementals must collect them for some reason. Maybe it is because they reflect the light of the sun? 
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {{\multi{10}{\iZinc{}}} \iTungsten{}}
+  \s\MYitems {{\multi{10}{\iZinc{}}} \iTungsten{} \iTungsten{} \iAluminum{} \iAluminum{}}
 }
 
 %%Lab Ruins
