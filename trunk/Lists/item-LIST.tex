@@ -170,18 +170,17 @@
 
 %%Items that belong to people at game start:
 \NEW{ItemFold}{\iWhite}{%%Azi Sci
-  \s\MYname	{White}
+  \s\MYname	{Elementium}
   \s\MYnumber	{\iWhiteNumber{}}
   \s\MYtext	{open if you eat}
-  \s\MYcontents	{If you are a human, this substance looks and tastes like baking soda. Bleh. If you are an elemental, you should have received a packet from whoever gave this to you. If not, go see a GM.}
+  \s\MYcontents	{Whatever the effects of White are.}
   \unstash{}
 }
   
-\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
-  %this is an important item but I forget how to signify it as unstashable.
+\NEW{Item}{\iWhitePowder}{
   \s\MYname     {A mysterious white powder}
   \s\MYnumber   {\iWhiteNumber{}}
-  \s\MYtext     {You do not know what this substance is but it looks interesting.}
+  \s\MYtext     {You do not know what this substance is.}
   \unstash{}
 }
 
@@ -345,3 +344,16 @@
   \physrepped{}
 }
 
+%%AziSci quest items
+\NEW{Item}{\iVanDeGraaff}{%%physically hidden | Lab Ruins
+  \s\MYname	{A Van de Graaff generator}
+  \s\MYnumber	{}
+  \s\MYtext	{This generator is old but looks like it should still work.}
+  \bulky{2}
+}
+
+\NEW{Item}{\iAluminum}{%%physically hidden | Lab Ruins
+  \s\MYname	{An Aluminum Rod}
+  \s\MYnumber	{}
+  \s\MYtext	{A light-weight aluminum rod.}
+}
