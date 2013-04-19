@@ -166,13 +166,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\iWhiteNumber{543}
-  
+\def\iWhiteNumber#{543}
+
 \NEW{ItemFold}{\iWhite}{
   \s\MYname	{White}
-  \s\MYnumber	{\iWhiteNumber}
+  \s\MYnumber	{\iWhiteNumber{}}
   \s\MYtext	{open if you eat}
   \s\MYcontents	{Whatever the effects of White are.}
+  \unstash{{}
   }
 
 \NEW{ItemFold}{\iMintIceCream}{
@@ -193,14 +194,13 @@
   \unstash{} %%like such I believe
 }
 
-\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
+%%\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
   %this is an important item but I forget how to signify it as unstashable.
-  \s\MYname     {A mysterious white powder}
-  \s\MYnumber   {\iWhiteNumber}
-  \s\MYtext     {You do not know what this substance is.}
-  \bulky{1} %%The white powder is 1 hand bulky? I though there was very little of it?!?
-  \unstash{}
-}
+%  \s\MYname     {A mysterious white powder}
+%  \s\MYnumber   {\iWhiteNumber{}}
+%  \s\MYtext     {You do not know what this substance is.}
+%  \unstash{}
+%}
 
 \NEW{Item}{\iTablet}{
   \s\MYname	{A stone tablet}
@@ -269,5 +269,5 @@
 \NEW{Item}{\iSyringe}{
   \s\MYname	{A Syringe}
   \s\MYnumber	{}%%Renumber later please
-  \s\MYtext	{This syringe in sufficient for drawing blood from a human.}
+  \s\MYtext	{This syringe in sufficient for drawing blood from a human or elemental.}
 }
