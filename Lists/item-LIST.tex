@@ -38,6 +38,8 @@
 \def\contain#1{%
   \s\MYcapacity{#1}%
   \append\MYmark{\mbox{ ~\MYcapacity-Hand~Capacity~ }}}
+\def\physrepped#{%
+  \append\MYmark{ ~PHYSREPPED~ }}
 
 
 %%%%%
@@ -186,6 +188,7 @@
   \s\MYname     {A large electromagnet}
   \s\MYnumber   {145}
   \s\MYtext     {A bulky torus made of tightly-coiled wire.}
+  \physrepped{}
   \bulky{1}
   \unstash{} %%like such I believe
 }
@@ -211,6 +214,7 @@
   \\
   \cMinion{}
   }
+  \physrepped{}
   \bulky{1}
 }
 
@@ -238,7 +242,7 @@
   \s\MYname	{Tricorder}
   \s\MYnumber	{}
   \s\MYtext	{A small, hand-held machine. This machine is designed to collect data on elementals in various ways. Refer to the associated research notebook for current functionality, and ways to research additional functionality.}
-  %%\s\MYnotebooks{\nTricorder{}}
+  %%\s\MYitems{\nTricorder{}}
 }
 
 %%leader's anti enslavement shield. he can of course give it to whoever he chooses
