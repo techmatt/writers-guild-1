@@ -168,20 +168,22 @@
 
 \def\iWhiteNumber#{543}
 
-\NEW{ItemFold}{\iWhite}{
+%%Items that belong to people at game start:
+\NEW{ItemFold}{\iWhite}{%%Azi Sci
   \s\MYname	{White}
   \s\MYnumber	{\iWhiteNumber{}}
   \s\MYtext	{open if you eat}
   \s\MYcontents	{Whatever the effects of White are.}
   \unstash{}
-  }
-
-\NEW{ItemFold}{\iMintIceCream}{%%Freezer
-  \s\MYname     {Mint Chocolate-Chip Ice Cream}
-  \s\MYnumber   {}
-  \s\MYtext     {Open if you eat.}
-  \s\MYcontents {Mm, minty chocolately goodness.}
 }
+  
+%%\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
+  %this is an important item but I forget how to signify it as unstashable.
+%  \s\MYname     {A mysterious white powder}
+%  \s\MYnumber   {\iWhiteNumber{}}
+%  \s\MYtext     {You do not know what this substance is.}
+%  \unstash{}
+%}
 
 \NEW{Item}{\iElectromagnet}{%%GD
   \s\MYname     {A large electromagnet}
@@ -191,14 +193,6 @@
   \bulky{1}
   \unstash{}
 }
-
-%%\NEW{Item}{\iWhitePowder}{%%HOW IS THIS DIFFERENT THAN THE "WHITE" ITEM ABOVE?
-  %this is an important item but I forget how to signify it as unstashable.
-%  \s\MYname     {A mysterious white powder}
-%  \s\MYnumber   {\iWhiteNumber{}}
-%  \s\MYtext     {You do not know what this substance is.}
-%  \unstash{}
-%}
 
 \NEW{Item}{\iTablet}{%%MS
   \s\MYname	{A stone tablet}
@@ -216,31 +210,12 @@
   \bulky{1}
 }
 
-%%Conduit Opening Items
-\NEW{Item}{\iZinc}{%%pile of shiny
-  \s\MYname	{A piece of Zinc}
-  \s\MYnumber	{}
-  \s\MYtext	{A strip of Zinc. It is highly reflective.}
-}
-
-\NEW{ItemFold}{\iCopper}{%%Malachite
-  \s\MYname	{A piece of Malachite}
-  \s\MYnumber	{}
-  \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item.}
-  \s\MYcontents	{This item is now a strip of copper.}
-}
-
-\NEW{Item}{\iBattery}{%%Chemical Stock Rooms (3)
-  \s\MYname	{A small, jury rigged battery}
-  \s\MYnumber	{}
-  \s\MYtext	{This battery can provide power to a machine for only a few minutes. Hopefully it will be enough.}
-}
-
 %%Tricorder, need to rename obviously
 \NEW{Item}{\iTricorder}{%%GD and MS
   \s\MYname	{Tricorder}
   \s\MYnumber	{}
   \s\MYtext	{A small, hand-held machine. This machine is designed to collect data on elementals in various ways. Refer to the associated research notebook for current functionality, and ways to research additional functionality.}
+  \physrepped{}
 }
 
 %%leader's anti enslavement shield. he can of course give it to whoever he chooses
@@ -257,6 +232,42 @@
   \s\MYtext	{This key allows you to pass freely in and out of room -015.}
 }
 
+%%Elemental Essences
+\NEW{Item}{\iFireEssence}{%%Fire Eles
+  \s\MYname	{Fire Elemental Essence}
+  \s\MYnumber	{}
+  \s\MYtext	{This is a piece of fire elemental essence. It is not in-game transferable  unless the owner choose to give it away, it is taken via a specific mechanic, or the owner dies - in which case the essence drops and becomes in-game transferable.}
+}
+
+%%Items that start in game locations. Organized by mechanic/quest:
+%%Avatar quest item
+\NEW{ItemFold}{\iMintIceCream}{%%Freezer
+  \s\MYname     {Mint Chocolate-Chip Ice Cream}
+  \s\MYnumber   {}
+  \s\MYtext     {Open if you eat.}
+  \s\MYcontents {Mm, minty chocolately goodness.}
+}
+
+%%Battery Making mechanic
+\NEW{ItemFold}{\iCopper}{%%Malachite
+  \s\MYname	{A piece of Malachite}
+  \s\MYnumber	{}
+  \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item.}
+  \s\MYcontents	{This item is now a strip of copper. Copper makes a good cathode for batteries.}
+}
+
+\NEW{Item}{\iZinc}{%%pile of shiny
+  \s\MYname	{A piece of Zinc}
+  \s\MYnumber	{}
+  \s\MYtext	{A strip of Zinc. It is highly reflective. Zinc makes a great anode for batteries.}
+}
+
+\NEW{Item}{\iBattery}{%%Chemical Stock Rooms (3)
+  \s\MYname	{A small, jury rigged battery}
+  \s\MYnumber	{}
+  \s\MYtext	{This battery can provide power to a machine for only a few minutes. Hopefully it will be enough.}
+}
+
 %%Sealing the Conduit Locations Items
 \NEW{Item}{\iVial}{%%Glassware cabinet in Human HQ
   \s\MYname	{A small glass vial}
@@ -270,3 +281,43 @@
   \s\MYtext	{This syringe in sufficient for drawing blood from a human or elemental.}
 }
 
+%%Unsealing Conduit locations items
+\NEW{Item}{\iBowl}{%%Kitchen Cabinet | Kitchen
+  \s\MYname	{A Large Bowl}
+  \s\MYnumber	{}
+  \s\MYtext	{This is a large bowl. It is 1 hand bulky when empty, but {\bf 2 hands bulky when full}.}
+  \bulky{1 or 2}
+}
+
+\NEW{Item}{\iLye}{%%JanitorCloset | Garden
+  \s\MYname	{A bottle of Lye}
+  \s\MYnumber	{}
+  \s\MYtext	{}
+  \bulky{1}
+}
+
+%%GD fetch items
+\NEW{Item}{\iWireTightener}{%%JanitorCloset | Gardens
+  \s\MYname	{A Wire Tightener}
+  \s\MYnumber	{}
+  \s\MYtext	{This is a wire tightener.}
+}
+
+\NEW{Item}{\iTungsten}{%%PileOfShiny | air HQ
+  \s\MYname	{A Spool of Tungsten Wire}
+  \s\MYnumber	{}
+  \s\MYtext	{This is a small spool of shiny Tungsten Wire. It is fairly conductive but gets very hot when electricity is run through it.}
+}
+
+\NEW{Item}{\iWireStripper}{%%Pile of Tools | lab ruins
+  \s\MYname	{A pair of Wire Strippers}
+  \s\MYnumber	{}
+  \s\MYtext	{These wire strippers can be used to strip insulation from a wire to facilitate connecting wires.}
+}
+
+\NEW{Item}{\iPhaseTransducer}{%%GD Lab Bench | GD Lab
+  \s\MYname	{A Phase Transducer}
+  \s\MYnumber	{}
+  \s\MYtext	{This phase transducer is used to couple some technologies to the mesionic sensor grid. It must be rung whenever it is being used.}
+  \physrepped{}
+}

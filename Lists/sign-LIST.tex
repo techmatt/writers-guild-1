@@ -194,9 +194,27 @@
   \s\MYname	{Katherine Strauss' lab space}
   \s\MYloc	{}%%TBD
   \s\MYtext	{This is a laboratory filled with a wide array of complex and only semi-portable machinery and equipment. It has evidently been setup in considerable haste. You cannot interact with this sign unless you know otherwise.
-  
   } 
-  }
+}
+
+\NEW{Sign}{\sGDLabChair}{
+  \s\MYname	{A Metal Chair}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{This chair has numerous wires running from it to near-by monitors. There also wrist and ankle cuffs for securing the test subject. 
+  
+  The chair crucial for certain experiments. It is bolted to the floor and cannot be moved or destroyed.
+  
+  \emph{If a player is instructed to sit in the chair, the should role play accordingly.}
+  } 
+}
+  
+\NEW{Sign}{\sGDLabBend}{
+  \s\MYname	{A Wooden Lab Bench}
+  \s\MYloc	{-002}
+  \s\MYtext	{This bench is littered with items relevant to doing scientific research.
+  } 
+  \s\MYitems{\iPhaseTransducer{}}
+}
   
 \NEW{Sign}{\sRaidGD}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
@@ -265,14 +283,36 @@
   \s\MYloc	{200-002}
   \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}). If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.}
   \s\MYitems  {\multi{3}{\iBattery{}}}
-  }
+}
+
+%%Garden | Gathering Space
+\NEW{Sign}{\sJanitorCloset}{
+  \s\MYname	{A Caretaker's Cottage}
+  \s\MYloc	{-013}
+  \s\MYtext	{There is a Caretaker's cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily much of the caretaker equipment is still here.
+  
+  {\bf If you would like to take something from the cottage, place 1 hand on this sign for 30 seconds, then take the item of your choice.}}
+  \s\MYitems  {\iWireTightener{} \multi{3}{\iLye{}}}
+}
 
 %%Cellar | Earth HQ
 \NEW{Sign}{\sMalachite}{
   \s\MYname	{A Vein of Malachite}
   \s\MYloc	{-004}
-  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}
+  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. 
+  
+  {\bf If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}}
   \s\MYitems {{multi{10}{\iCopper{}}}}
+}
+
+%%Pond | Water HQ
+\NEW{Sign}{\sWaterPond}{%%Water elemental residue source
+  \s\MYname	{A Still Pond of Water}
+  \s\MYloc	{-032}
+  \s\MYtext	{There is a pond of water here. You can't tell how deep it is in the middle, but here at the edge, it is shallow enough. The pond can be used as a source of water.
+  
+  {\bf If you draw water from the pond for any reason, the item in which you put the water acquires an $\alpha$ score of ``2''.}}
+  \s\MYitems {}
 }
 
 %%Kitchen Signs | Fire HQ
@@ -301,16 +341,6 @@
   \s\MYitems {\iMintIceCream{}}
 }
 
-%%Human HQ
-\NEW{Sign}{\sGlassware}{
-  \s\MYname	{A glassware cabinet}
-  \s\MYloc	{-002}
-  \s\MYtext	{This is a glass front cabinet for storing glassware. You can see many tiny vials inside the cabinet. I wonder why there are so many?
-  
-  {\bf If you would like to take a vial from the cabinet place 1 hand on this sign for 15 seconds, then take a vial.}
-  \s\MYitems {{\multi{10}{\iVial{}}}}
-}
-
 \NEW{Sign}{\sLavaPool}{
   \s\MYname	{A Lava Pool}
   \s\MYloc	{-030}
@@ -321,6 +351,26 @@
   \s\MYitems {}
 }
 
+\NEW{Sign}{\sKitchenCabinet}{
+  \s\MYname	{A Kitchen Cabinet}
+  \s\MYloc	{-030}
+  \s\MYtext	{There is a kitchen cabinet against the wall here.
+  
+  {\bf If you would like to take an item from the refrigerator or put one into it, place 1 hand on this sign for 30 seconds, then take an item of your choice out, or place \emph{1} item inside.}
+  }
+  \s\MYitems {{\multi{3}{\iBowl{}}}}
+}
+
+%%Human HQ
+\NEW{Sign}{\sGlassware}{
+  \s\MYname	{A glassware cabinet}
+  \s\MYloc	{-002}
+  \s\MYtext	{This is a glass front cabinet for storing glassware. You can see many tiny vials inside the cabinet. I wonder why there are so many?
+  
+  {\bf If you would like to take a vial from the cabinet place 1 hand on this sign for 15 seconds, then take a vial.} }
+  \s\MYitems {{\multi{10}{\iVial{}}}}
+}
+
 %%Hallway off of -002 | Air HQ
 \NEW{Sign}{\sPileOfShiny}{
   \s\MYname	{A pile of scrap metal and other shiny objects}
@@ -328,15 +378,15 @@
   \s\MYtext	{There is a huge pile of scrap metal here. Air elementals must collect them for some reason. Maybe it is because they reflect the light of the sun? 
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {{\multi{10}{\iZinc{}}}}
+  \s\MYitems {{\multi{10}{\iZinc{}}} \iTungsten{}}
 }
 
 %%Lab Ruins
 \NEW{Sign}{\sPileofTools}{
-  \s\MYname	{There is a pile of discarded tools here}
+  \s\MYname	{A Pile of Discarded Tools}
   \s\MYloc	{Across from -004}
   \s\MYtext	{There is a pile of broken and discarded tools here. They must be left over from the original lab. Maybe some of them are still functional?
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {{\multi{4}{\iSyringe{}}}}
+  \s\MYitems {{\multi{4}{\iSyringe{}}} \iWireStripper{}}
 }
