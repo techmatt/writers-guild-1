@@ -244,7 +244,7 @@
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
   \s\MYname	{Sofia Alexandrov's lab space}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{You scour the lab's computers and experimental setups. There is quite a lot of highly encrypted or hastily erased data here, but you can still manage to recover some of the projects. \cMS{} is primarily researching the process by which elementals enslave humans or elementals, and is trying to replicate it. So far as you can tell, the focus is only on enslaving elementals and not humans. So far, \cMS{\they} have managed to create a prototype device in the form of a long rod that can control very weak elementals, but there is also considerable work into Azi tape. \cMS{} has apparently created a new type of tape that can train Azi to enslave much more powerful elementals, although in its current form such tape is very dangerous (and illegal) to use. There is some evidence suggesting that a prototype version of this tape has already been experimented with several years ago.
+  \s\MYtext	{You scour the lab's computers and experimental setups. There is quite a lot of highly encrypted or hastily erased data here, but you can still manage to recover some of the projects. \cMS{} is primarily researching the process by which elementals enslave humans or elementals, and is trying to replicate it. So far as you can tell, the focus is only on enslaving elementals and not humans. So far, \cMS{\they} has managed to create a prototype device in the form of a long rod that can control very weak elementals, but there is also considerable work into Azi tape. \cMS{} has apparently created a new type of tape that can train Azi to enslave much more powerful elementals, although in its current form such tape is very dangerous (and illegal) to use. There is some evidence suggesting that a prototype version of this tape has already been experimented with several years ago.
   
   \emph{If \cMS{} is dead, you should contact a GM now.}
   
@@ -259,7 +259,7 @@
   There are two ways to pass this door:
 \begin{enumerate}
  \item Possess the appropriate key (item number: \iLabKey{\MYnumber}).
- \item Hit the door with a {\bf CR of 10} or greater. If you choose to do so, you must write ``Broken'' on the sign indicating that the door is now unlocked. Anyone may now freely pass into the room since the door has been broken down. {\bf Further,} elementals that participate in breaking the door down must write their elemental type on the back of sheet since this action leaves elemental residue on the door. Anyone possessing a \iTricorder{} with ``Detect Elemental Residue'' functionality may look under the sheet to learn the type(s) of elementals that participated in breaking the door down.
+ \item Hit the door with a {\bf CR of 10} or greater. If you choose to do so, you must write ``Broken'' on this sign indicating that the door is now unlocked. Anyone may now freely pass into the room since the door has been broken down. {\bf Further,} elementals that participate in breaking the door down must write their elemental type on the back of sheet since this action leaves elemental residue on the door. Anyone possessing a \iTricorder{} with ``Detect Elemental Residue'' functionality may look under the sheet to learn the type(s) of elementals that participated in breaking the door down.
 \end{enumerate}}
   \s\MYitems {}
 }
@@ -268,7 +268,7 @@
 \NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
   \s\MYname	{A Chemical Stock Room}
   \s\MYloc	{200-002}
-  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}).} If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.
+  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}). If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.}
   \s\MYitems  {\multi{3}{\iBattery{}}}
   }
 
@@ -276,8 +276,8 @@
 \NEW{Sign}{\sMalachite}{
   \s\MYname	{A Vein of Malachite}
   \s\MYloc	{-004}
-  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper.}
-  \s\MYitems {}
+  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}
+  \s\MYitems {\iCopper{}}
 }
 
 %%Kitchen Signs
@@ -285,5 +285,15 @@
   \s\MYname	{The Kitchen Sink}
   \s\MYloc	{-030}
   \s\MYtext	{This is a stainless steel kitchen sink.}
+  \s\MYitems {}
+}
+
+\NEW{Sign}{\sLavaPool}{
+  \s\MYname	{A Lava Pool}
+  \s\MYloc	{-030}
+  \s\MYtext	{There is a lava pool sitting in the corner of the kitchen. It is unclear how it does not light the entire house on fire. It probably has something to do with the fire elementals. 
+  
+  This lava pool can be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue} (you can only walk heel to toe for the next 3 minutes).
+  }
   \s\MYitems {}
 }
