@@ -166,18 +166,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%-----------------------------%%%
+%
+% Items are organized by "`owned by a person at start game" and "somewhere in world"
+% Withing "`person items"', organized by character
+% Within "`somewhere in world"', organized by quest/mechanic
+%
+%%%-----------------------------%%%
+
+
 \def\iWhiteNumber#{543}
 
 %%Items that belong to people at game start:
-\NEW{ItemFold}{\iWhite}{%%Azi Sci
-  \s\MYname	{Elementium}
-  \s\MYnumber	{\iWhiteNumber{}}
-  \s\MYtext	{open if you eat}
-  \s\MYcontents	{Whatever the effects of White are.}
-  \unstash{}
-}
   
-\NEW{Item}{\iWhitePowder}{
+\NEW{Item}{\iWhitePowder}{%%Azi Sci
   \s\MYname     {A mysterious white powder}
   \s\MYnumber   {\iWhiteNumber{}}
   \s\MYtext     {You do not know what this substance is.}
@@ -209,6 +211,14 @@
   \bulky{1}
 }
 
+\NEW{Item}{\iAziTape}{%%MS
+  \s\MYname	{Flash Drive with Azi Tape}
+  \s\MYnumber	{}
+  \s\MYtext	{A flash drive containing incomplete tape for rapid reeducation of Azi.  You never know when it might come in handy.}
+  \unstash{}
+  %\bulky{1}
+}
+
 %%Tricorder, need to rename obviously
 \NEW{Item}{\iTricorder}{%%GD and MS
   \s\MYname	{Tricorder}
@@ -222,13 +232,21 @@
   \s\MYname	{Prototype Anti-Enslavement Shield}
   \s\MYnumber	{}
   \s\MYtext	{This is a prototype of a machine to allow Cits to resist elemental enslavement. Once every 30 minutes, this machine can be activated to resist elemental enslavement for 2 minutes. During the cool-down period, the machine must also be reset before it can be used again. To reset the shield, a scientist must devote 1 minute to fixing it (role-play accordingly).}
+  \unstash{}
 }
 
 %%Lab key door for MS lab. Dema also has a copy
 \NEW{Item}{\iLabKey}{%%MS and Dema
-  \s\MYname	{A key to the locked door}
+  \s\MYname	{A Key}
   \s\MYnumber	{}
   \s\MYtext	{This key allows you to pass freely in and out of room -015.}
+}
+
+\NEW{ItemFold}{\iEleBelt}{%%Romeo
+  \s\MYname	{A non-functional Elemental Protection Belt}
+  \s\MYnumber	{}
+  \s\MYtext	{When functioning, this belt is supposed to protect the wearer from Elemental Attacks. {\bf Do not open unless directed to do so.}}
+  \s\MYcontents {{\bf The shield is now operational} and grants +3CR to defense against elementals who attack you. The item can be used by any human, although it provides \emph{no defense} against elemental enslavement.}
 }
 
 %%Elemental Essences
@@ -275,7 +293,7 @@
   \s\MYname	{A piece of Malachite}
   \s\MYnumber	{}
   \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item.}
-  \s\MYcontents	{This item is now a strip of copper. Copper makes a good cathode for batteries.}
+  \s\MYcontents	{This item is now a {\bf strip of copper}. Copper makes a good cathode for batteries.}
 }
 
 \NEW{Item}{\iZinc}{%%pile of shiny
@@ -314,12 +332,12 @@
 \NEW{Item}{\iLye}{%%JanitorCloset | Garden
   \s\MYname	{A bottle of Lye}
   \s\MYnumber	{}
-  \s\MYtext	{}
+  \s\MYtext	{Lye is a caustic cleaning chemical. You should be careful when carrying it.}
   \bulky{1}
 }
 
 %%GD fetch items
-\NEW{Item}{\iWireTightener}{%%Rogue
+\NEW{Item}{\iWireTightener}{%%Rogue, Janitors Closet
   \s\MYname	{A Wire Tightener}
   \s\MYnumber	{}
   \s\MYtext	{This is a wire tightener.}
@@ -342,6 +360,7 @@
   \s\MYnumber	{}
   \s\MYtext	{This phase transducer is used to couple some technologies to the mesionic sensor grid. It must be rung whenever it is being used.}
   \physrepped{}
+  \bulky{1}
 }
 
 %%AziSci quest items
@@ -364,53 +383,20 @@
   \s\MYtext	{A small electronic piece designed to emit light.}
 }
 
+\NEW{ItemFold}{\iWhite}{%%Azi Sci
+  \s\MYname	{Elementium}
+  \s\MYnumber	{\iWhiteNumber{}}
+  \s\MYtext	{open if you eat}
+  \s\MYcontents	{Whatever the effects of White are.}
+  \unstash{}
+}
+
+%%MS item fetch quest
 \NEW{Item}{\iCoffeeMug}{%%CoffeeMachine | MS lab
   \s\MYname	{A Coffee Mug}
   \s\MYnumber	{}
   \s\MYtext	{This coffee mug is full of fresh-brewed coffee.}
   \bulky{1}
-}
-
-\NEW{Item}{\iHeisenbergCompensator}{%%Heisenberg Compensator for Elemental Barrier Belt
-  \s\MYname	{Heisenberg Compensator}
-  \s\MYnumber	{}
-  \s\MYtext	{This is a very advanced looking piece of technology.  You are impressed by the scientists who created it.}
-  \bulky{1}
-}
-
-\NEW{Item}{\iCrystalGeode}{%%Crystal geode for Elemental Barrier Belt
-  \s\MYname	{Crystal Geode}
-  \s\MYnumber	{}
-  \s\MYtext	{A heavy, hemispherical piece of rock.  At first you think it looks like an ugly, grey, and pitted.  Then you turn it over and see its polished interior, deep blue with brilliant crystals.}
-  \bulky{1}
-}
-
-\NEW{Item}{\iLavaEmber}{%%Lava ember for Elemental Barrier Belt
-  \s\MYname	{Lava Ember}
-  \s\MYnumber	{}
-  \s\MYtext	{A palm-sized piece of stone that glows deep orange and feels warm to the touch.}
-  \bulky{1}
-}
-
-\NEW{Item}{\iHolographicLaser}{%%A fancy holographic laser
-  \s\MYname	{Holographic Laser}
-  \s\MYnumber	{}
-  \s\MYtext	{A huge, fancy-looking piece of equipment that hulks in its corner.  It makes a whirring noise when it is turned on, and then shoots out a bright green beam.}
-  \bulky{3}
-}
-
-\NEW{Item}{\iAziTape}{%%Incomplete tape for Azi reeducation
-  \s\MYname	{Flash Drive with Azi Tape}
-  \s\MYnumber	{}
-  \s\MYtext	{A flash drive containing incomplete tape for rapid reeducation of Azi.  You never know when it might come in handy.}
-  \bulky{1}
-}
-
-\NEW{Item}{\iAirplanePiece}{%%A fragment of the downed airplane
-  \s\MYname	{Airplane Fragment}
-  \s\MYnumber	{}
-  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that was crashed by an elemental.}
-  \bulky{2}
 }
 
 \NEW{Item}{\iControlRod}{%%Control rod for mad scientist
@@ -419,3 +405,42 @@
   \s\MYtext	{A large metallic rod with dials, flashing lights, and electrical wiring all over it.  It's not even clear how to hold it without getting electrocuted...but it's functionality and not aesthetics that counts, isn't it?  Besides, it's just a prototype.  There's plenty of time to make it pretty later.}
   \bulky{2}
 }
+
+%%Romeo Item Quest
+\NEW{Item}{\iHeisenbergCompensator}{%%GD lab bench and Azi Sci lab bench | GD Lab, AziLab
+  \s\MYname	{Heisenberg Compensator}
+  \s\MYnumber	{}
+  \s\MYtext	{This is a very advanced looking piece of technology.  You are impressed by the scientists who created it.}
+  \bulky{1}
+}
+
+\NEW{ItemFold}{\iCrystalGeode}{%%Pile Of Rocks (sGeodes) | Cellar
+  \s\MYname	{A Grey Rock}
+  \s\MYnumber	{}
+  \s\MYtext	{A heavy, hemispherical piece of rock; it is ugly, grey, and pitted. {\bf If you would like to break it open to check if it is a geode, hit it with a CR 4+ attack. If you do so, open the item}}
+  \s\MYcontents {You break open the stone and see that {\bf it is indeed a Geode}. It has a polished interior, deep blue with brilliant crystals.}
+  \bulky{1}
+}
+
+\NEW{Item}{\iLavaEmber}{%%Lava Pool | Kitchen
+  \s\MYname	{Lava Ember}
+  \s\MYnumber	{}
+  \s\MYtext	{A palm-sized piece of stone that glows deep orange and feels warm to the touch.}
+  \bulky{1}
+}
+
+\NEW{Item}{\iHolographicLaser}{%%Physically in lab space (no sign) | GD Lab
+  \s\MYname	{Holographic Laser}
+  \s\MYnumber	{}
+  \s\MYtext	{A huge, fancy-looking piece of equipment that hulks in its corner.  It makes a whirring noise when it is turned on, and then shoots out a bright green beam.}
+  \bulky{3}
+}
+
+%%Airplane Plot
+\NEW{Item}{\iAirplanePiece}{%%Azi Lab Bench (can't carry it around) | Azi Lab
+  \s\MYname	{Airplane Fragment}
+  \s\MYnumber	{}
+  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that was crashed by an elemental.}
+  \bulky{2}
+}
+

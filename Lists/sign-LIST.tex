@@ -223,7 +223,7 @@
   \s\MYloc	{-002}
   \s\MYtext	{This bench is littered with items relevant to doing scientific research.
   } 
-  \s\MYitems{\iPhaseTransducer{}}
+  \s\MYitems{\iPhaseTransducer{} \iHeisenbergCompensator{}}
 }
 
 \NEW{Sign}{\sHighResMass}{
@@ -259,6 +259,14 @@
   
   {\bf You cannot interact with this device unless you know otherwise.}} 
   \s\MYitems{\multi{10}{\iWhite{}}}%%White lives in the ``A'' Packet.
+}
+
+\NEW{Sign}{\sAziSciLabBench}{
+  \s\MYname	{A Wooden Lab Bench}
+  \s\MYloc	{-002}
+  \s\MYtext	{This bench is littered with items relevant to doing scientific research.
+  } 
+  \s\MYitems{\iHeisenbergCompensator{} \iAirplanePiece{}}
 }
 
 %%Mad Scientist Lab Signs
@@ -302,6 +310,14 @@
   \s\MYitems  {\iCoffeeMug{}}
 }
 
+\NEW{Sign}{\sMSLabBench}{
+  \s\MYname	{A Wooden Lab Bench}
+  \s\MYloc	{-002}
+  \s\MYtext	{This bench is littered with items relevant to doing scientific research.
+  } 
+  \s\MYitems{\iControlRod{}}
+}
+
 %%in all 3 labs
 \NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
   \s\MYname	{A Chemical Stock Room}
@@ -314,10 +330,10 @@
 \NEW{Sign}{\sJanitorCloset}{
   \s\MYname	{A Caretaker's Cottage}
   \s\MYloc	{-013}
-  \s\MYtext	{There is a Caretaker's cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily much of the caretaker equipment is still here.
+  \s\MYtext	{There is a Caretaker's cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily much of the caretaker equipment is still in working order.
   
   {\bf If you would like to take something from the cottage, place 1 hand on this sign for 30 seconds, then take the item of your choice.}}
-  \s\MYitems  {\multi{3}{\iLye{}}}
+  \s\MYitems  {\multi{3}{\iLye{}} \iWireTightener{}}
 }
 
 %%Cellar | Earth HQ
@@ -328,6 +344,15 @@
   
   {\bf If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}}
   \s\MYitems {{multi{10}{\iCopper{}}}}
+}
+
+\NEW{Sign}{\sGeodes}{
+  \s\MYname	{A Pile of Rocks}
+  \s\MYloc	{-004}
+  \s\MYtext	{These rocks are worn smooth. They must have spent a lot of time in a river-bed. Ancient riverbeds are a great place to find geodes.
+  
+  {\bf If you would like to take a rock, place 1 hand on this sign for 30 seconds.}}
+  \s\MYitems {{multi{3}{\iCrystalGeode{}}}}
 }
 
 %%Pond | Water HQ
@@ -371,9 +396,11 @@
   \s\MYloc	{-030}
   \s\MYtext	{There is a lava pool sitting in the corner of the kitchen. It is unclear how it does not light the entire house on fire. It probably has something to do with the fire elementals. 
   
-  This lava pool can be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue} (you can only walk heel to toe for the next 3 minutes).
+  {\bf If you would like to try to take an item from the Lava pool, place 1 hand on the sign for 30 seconds.}
+    
+  This lava pool can also be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue} (you can only walk heel to toe for the next 3 minutes).
   }
-  \s\MYitems {}
+  \s\MYitems {\iLavaEmber{}}
 }
 
 \NEW{Sign}{\sKitchenCabinet}{
@@ -407,7 +434,7 @@
 }
 
 %%Lab Ruins
-\NEW{Sign}{\sPileofTools}{
+\NEW{Sign}{\sPileOfTools}{
   \s\MYname	{A Pile of Discarded Tools}
   \s\MYloc	{Across from -004}
   \s\MYtext	{There is a pile of broken and discarded tools here. They must be left over from the original lab. Maybe some of them are still functional?
@@ -422,5 +449,5 @@
   \s\MYtext	{There is a hard plastic box here. It is easily recognizable as an organizer for small electronics. It is miraculous that nothing fell on it and broke the box.
   
   If you would like to search the box for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {\iPhotodiode \iPhotodiode}
+  \s\MYitems {\iPhotodiode{} \iPhotodiode{}}
 }
