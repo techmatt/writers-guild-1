@@ -300,7 +300,7 @@
   
 \NEW{Sign}{\sRaidMS}{
   %my idea to make this as simple as possible would be that this is a double sheet that you can only look under after you raid the lab.
-  \s\MYname	{Sofia Alexandrov's lab space}
+  \s\MYname	{Sofia Alexandrov's Lab Space}
   \s\MYloc	{}%%TBD
   \s\MYtext	{You scour the lab's computers and experimental setups. There is quite a lot of highly encrypted or hastily erased data here, but you can still manage to recover some of the projects. \cMS{} is primarily researching the process by which elementals enslave humans or elementals, and is trying to replicate it. So far as you can tell, the focus is only on enslaving elementals and not humans. So far, \cMS{\they} has managed to create a prototype device in the form of a long rod that can control very weak elementals, but there is also considerable work into Azi tape. \cMS{} has apparently created a new type of tape that can train Azi to enslave much more powerful elementals, although in its current form such tape is very dangerous (and illegal) to use. There is some evidence suggesting that a prototype version of this tape has already been experimented with several years ago.
   
@@ -327,8 +327,8 @@
   \s\MYloc	{-015}
   \s\MYtext	{This is an automatic coffee maker.
   
-  {\bf If you would like to see if there is a full coffee mug for you, place 1 hand on this sign for 30 seconds. You may then take 1 coffee mug if there are any available.}}
-  \s\MYitems  {\iCoffeeMug{}}
+  {\bf If you would like to brew a cup of coffee, place 1 hand on this sign for 30 seconds. You may then take 1 coffee mug if there are any available.}}
+  \s\MYitems  {\iCoffeeMug{} \iCoffeeMug{} \iCoffeeMug{}}
 }
 
 \NEW{Sign}{\sMSLabBench}{
@@ -343,7 +343,7 @@
 \NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
   \s\MYname	{A Chemical Stock Room}
   \s\MYloc	{200-002}
-  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 copper (item number: \iCopper{\MYnumber{}}), and 1 zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take a battery (item number:\iBattery{\MYnumber{}}). If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.}
+  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 Copper (item number: \iCopper{\MYnumber{}}), and 1 Zinc (item number: \iZinc{\MYnumber{}}) (tear them up), then take \iBattery{} (item number:\iBattery{\MYnumber{}}). If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.}
   \s\MYitems  {\multi{3}{\iBattery{}}}
 }
 
@@ -351,7 +351,7 @@
 \NEW{Sign}{\sJanitorCloset}{
   \s\MYname	{A Caretaker's Cottage}
   \s\MYloc	{-013}
-  \s\MYtext	{There is a Caretaker's cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily much of the caretaker equipment is still in working order.
+  \s\MYtext	{There is a Caretaker's Cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily, much of the caretaker equipment is still in working order.
   
   {\bf If you would like to take something from the cottage, place 1 hand on this sign for 30 seconds, then take the item of your choice.}}
   \s\MYitems  {\multi{3}{\iLye{}} \iWireTightener{}}
@@ -384,7 +384,7 @@
 \NEW{Sign}{\sGeodes}{
   \s\MYname	{A Pile of Rocks}
   \s\MYloc	{-004}
-  \s\MYtext	{These rocks are worn smooth. They must have spent a lot of time in a river-bed. Ancient riverbeds are a great place to find geodes.
+  \s\MYtext	{These rocks are worn smooth. They must have spent a lot of time in a river bed. Ancient river beds are a great place to find geodes.
   
   {\bf If you would like to take a rock, place 1 hand on this sign for 30 seconds.}}
   \s\MYitems {{multi{3}{\iCrystalGeode{}}} {multi{3}{\iRocks{}}}} %%50% chance of getting a geode
@@ -393,22 +393,28 @@
 \NEW{Sign}{\sWineRack}{%%Flavor Text Sign!
   \s\MYname	{A Wine Rack}
   \s\MYloc	{-004}
-  \s\MYtext	{There is a floor to ceiling wine rack. There are several dozen bottles of red wine here.}
+  \s\MYtext	{There is a floor-to-ceiling wine rack. There are several dozen bottles of red wine here.
+  
+  {\bf If you would like to take \iWine{}, place 1 hand on this sign for 30 seconds, then take \iWine{}.}}
   \s\MYitems {{\multi{3}{\iWine{}}}}
 }
 
 \NEW{Sign}{\sBarrel}{%%Flavor Text Sign!
   \s\MYname	{A Huge Oak Barrel}
   \s\MYloc	{-004}
-  \s\MYtext	{There is an old oak barrel sitting on a stand here. It is covered in dust, but there appears to still be something inside.}
+  \s\MYtext	{There is an old oak barrel sitting on a stand here. It is covered in dust, but there appears to still be something inside.
+  
+  {\bf If you would like to take \iMead{}, place 1 hand on this sign for 30 seconds, then take \iMead{}.}}
   \s\MYitems {\multi{3}{\iMead{}}}
 }
 
 \NEW{Sign}{\sRockSlide}{%%Flavor Text Sign!
   \s\MYname	{A Rock Slide}
   \s\MYloc	{-004}
-  \s\MYtext	{A recent rock slide has taken out this part of the cellar. there are rocks scattered all over the floor. Watch your step!}
-  \s\MYitems {}
+  \s\MYtext	{A recent rock slide has taken out this part of the cellar. There are rocks scattered all over the floor, but none of them look very interesting.
+  
+  {\bf If you want a rock anyway, place 1 hand on this sign for 30 seconds, then take \iCrystalGeode{}.}}
+  \s\MYitems {{multi{1}{\iCrystalGeode{}}} {multi{3}{\iRocks{}}}} %%25% chance of  geode
 }
 
 \NEW{Sign}{\sStorageLocker}{%%Flavor Text Sign!
@@ -435,21 +441,23 @@
   
   The pond can be used as a source of water.
   
-  {\bf If you draw water from the pond for any reason, the item in which you put the water acquires an $\alpha$ score of ``2''.}}
+  {\bf If you draw water from the pond for any reason, the item in which you put the water acquires an $\alpha$ score of ``2''.} (Write ``$\alpha$ = 2'' on the item.)}
   \s\MYitems {}
 }
 
 \NEW{Sign}{\sStream}{%%Flavor Text Sign
   \s\MYname	{A Small Stream}
   \s\MYloc	{-032}
-  \s\MYtext	{A little stream trickles into the pond here. It is so overgrown with weeds and grasses that you almost didn't notice it.}
+  \s\MYtext	{A little stream trickles into the pond here. It is so overgrown with weeds and grasses that you almost didn't notice it.
+  
+  The steam can be used as a source of water.}
   \s\MYitems {}
 }
 
 \NEW{Sign}{\sWillow}{%%Flavor Text Sign
   \s\MYname	{A Willow Tree}
   \s\MYloc	{-032}
-  \s\MYtext	{A willow tree hangs over the pond here, offering shade and a nice resting spot. What a great place to lay back and watch the clouds go by.}
+  \s\MYtext	{A willow tree hangs over the pond here, offering shade and a nice resting spot. What a great place to lie back and watch the clouds go by.}
   \s\MYitems {}
 }
 
@@ -465,7 +473,9 @@
 \NEW{Sign}{\sSink}{
   \s\MYname	{The Kitchen Sink}
   \s\MYloc	{-030}
-  \s\MYtext	{This is a stainless steel kitchen sink.}
+  \s\MYtext	{This is a stainless steel kitchen sink.
+  
+  The sink can be used as a source of water.}
   \s\MYitems {}
 }
 
@@ -474,7 +484,7 @@
   \s\MYloc	{-030}
   \s\MYtext	{This is a stainless steel refrigerator. It is used for storing food. 
   
-  {\bf If you would like to take an item from the refrigerator or put one into it, place 1 hand on this sign for 30 seconds, then take an item of your choice out, or place \emph{1} item inside.}}
+  {\bf If you would like to take an item from the refrigerator or put one into it, place 1 hand on this sign for 30 seconds, then take an item of your choice out, or place 1 item inside.}}
   \s\MYitems {}
 }
 
@@ -483,7 +493,7 @@
   \s\MYloc	{-030}
   \s\MYtext	{This is a stainless steel freezer. It is used for storing food and keeping things cold.
   
-  {\bf If you would like to take an item from the freezer or put one into it, place 1 hand on this sign for 1 minute, then take an item of your choice out, or place \emph{1} item inside.}}
+  {\bf If you would like to take an item from the freezer or put one into it, place 1 hand on this sign for 1 minute, then take an item of your choice out, or place 1 item inside.}}
   \s\MYitems {\iMintIceCream{}}
 }
 
@@ -494,7 +504,7 @@
   
   {\bf If you would like to try to take an item from the Lava pool, place 1 hand on the sign for 30 seconds.}
     
-  This lava pool can also be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue} (you can only walk heel to toe for the next 3 minutes).
+  This lava pool can also be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue. Only fire elementals are immune to this effect.} (you can only walk heel to toe for the next 3 minutes).
   }
   \s\MYitems {\iLavaEmber{}}
 }
@@ -504,7 +514,7 @@
   \s\MYloc	{-030}
   \s\MYtext	{There is a kitchen cabinet against the wall here.
   
-  {\bf If you would like to take an item from the cabinet or put one into it, place 1 hand on this sign for 30 seconds, then take an item of your choice out, or place \emph{1} item inside.}
+  {\bf If you would like to take an item from the cabinet or put one into it, place 1 hand on this sign for 30 seconds, then take an item of your choice out, or place 1 item inside.}
   }
   \s\MYitems {{\multi{3}{\iBowl{}}}}
 }
@@ -535,7 +545,7 @@
 
 %%Human HQ
 \NEW{Sign}{\sGlassware}{
-  \s\MYname	{A glassware cabinet}
+  \s\MYname	{A Glassware Cabinet}
   \s\MYloc	{-002}
   \s\MYtext	{This is a glass front cabinet for storing glassware. You can see many tiny vials inside the cabinet. I wonder why there are so many?
   
@@ -552,26 +562,26 @@
 
 %%Hallway off of -002 | Tower (Air HQ)
 \NEW{Sign}{\sPileOfShiny}{
-  \s\MYname	{A pile of scrap metal and other shiny objects}
-  \s\MYloc	{Hallway off of -002}
+  \s\MYname	{A Pile of Scrap Metal and Other Shiny Objects}
+  \s\MYloc	{Hallway off -002}
   \s\MYtext	{There is a huge pile of scrap metal here. Air elementals must collect them for some reason. Maybe it is because they reflect the light of the sun? 
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
   \s\MYitems {{\multi{10}{\iZinc{}}} \iTungsten{} \iTungsten{} \iAluminum{} \iAluminum{}}
 }
 
-\NEW{Sign}{\sWindy}{%%AOE sign
+\NEW{Sign}{\sWindy}{%%AOE sign | Need to put a tape strip down on the floor to get attention
   \s\MYname	{A Windy Lookout}
-  \s\MYloc	{Hallway off of -002}
+  \s\MYloc	{Hallway off -002}
   \s\MYtext	{You can see the entire grounds from up here, but it is very windy!
   
-  {\Large {\bf It is so windy that unless you are an air elemental, you cannot spend more than 5 minutes here without going back to the main house for at least 3 minutes to warm up again.}}}
+  {\Huge {\bf It is so windy that unless you are an air elemental, you cannot spend more than 5 minutes here without going back to the main house for at least 3 minutes to warm up again.}}}
   \s\MYitems {}
 }
 
 \NEW{Sign}{\sDestroyedWall}{%%Flavor Text sign
-  \s\MYname	{A Blown Out Section of Wall}
-  \s\MYloc	{Hallway off of -002}
+  \s\MYname	{A Blown-Out Section of Wall}
+  \s\MYloc	{Hallway off -002}
   \s\MYtext	{The air elementals must have blown this wall out to make it easier for them to get in and out of the tower.}
   \s\MYitems {}
 }
@@ -587,9 +597,9 @@
 }
 
 \NEW{Sign}{\sOrganizerBox}{
-  \s\MYname	{A Hard Plastic Box}
+  \s\MYname	{A Hard Plastic Box For Organizing Electronics}
   \s\MYloc	{Across from -004}
-  \s\MYtext	{There is a hard plastic box here. It is easily recognizable as an organizer for small electronics. It is miraculous that nothing fell on it and broke the box.
+  \s\MYtext	{There is a hard plastic box here. It is easily recognizable as an organizer for small electronics. It is miraculous that nothing fell on it when the lab was destroyed.
   
   If you would like to search the box for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
   \s\MYitems {\iPhotodiode{} \iPhotodiode{}}
@@ -602,9 +612,9 @@
   \s\MYitems {}
 }
 
-\NEW{Sign}{\sDoor}{%%Flavor Text Sign
-  \s\MYname	{A Delapidated Door}
+\NEW{Sign}{\sWall}{%%Flavor Text Sign
+  \s\MYname	{A Crumbling Wall}
   \s\MYloc	{Across from -004}
-  \s\MYtext	{There is a doorway here, blocked by a fallen beam. The room beyond is filled with trashed furniture.}
+  \s\MYtext	{This section of wall is crumbling alarmingly. It looks like the ceiling could come down at any minute.}
   \s\MYitems {}
 }
