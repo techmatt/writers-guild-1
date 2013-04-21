@@ -232,6 +232,13 @@
   \s\MYtext	{This machine is great for doing scientific research that requires high resolution.} 
   \s\MYitems{}
 }
+ 
+\NEW{Sign}{\sScale}{
+  \s\MYname	{A Scale}
+  \s\MYloc	{-002}
+  \s\MYtext	{Used for weighing reagents.} 
+  \s\MYitems{}
+}
   
 %%Azi Sci Lab
 \NEW{Sign}{\sSciLab}{
@@ -270,11 +277,19 @@
 }
 
 \NEW{Sign}{\sPeriodicTable}{
-  \s\MYname	{Ther Periodic Table of Elements}
+  \s\MYname	{The Periodic Table of Elements}
   \s\MYloc	{-002}
   \s\MYtext	{There is a periodic table of the elements here. Hydrogen... Helium... Lithium... Beryllium....} 
   \s\MYitems{}
 }
+
+\NEW{Sign}{\sDistilling}{
+  \s\MYname	{A Large Distilling Apparatus}
+  \s\MYloc	{-002}
+  \s\MYtext	{Crucial for ensuring that water used for experimenting is pure.} 
+  \s\MYitems{}
+}
+
 %%Mad Scientist Lab Signs
 \NEW{Sign}{\sMSLab}{
   \s\MYname	{Sofia Alexandrov's lab space}
@@ -342,6 +357,20 @@
   \s\MYitems  {\multi{3}{\iLye{}} \iWireTightener{}}
 }
 
+\NEW{Sign}{\sRoseBush}{
+  \s\MYname	{A Rose Bush}
+  \s\MYloc	{-013}
+  \s\MYtext	{There is a ring of rose bushes here that have grown wild in the years without care. Even so, there are beautiful, large blooms all over the bushes. The air is gently perfumed by them.}
+  \s\MYitems  {}
+}
+
+\NEW{Sign}{\sFountain}{
+  \s\MYname	{A Stone Fountain}
+  \s\MYloc	{-013}
+  \s\MYtext	{A stone fountain sits here. It must have been lovely once, with a large bird bath, and a stone cherub. The cherub is cracked, and the fountain mechanism is clogged with leaves and is no longer functional.}
+  \s\MYitems  {}
+}
+
 %%Cellar | Earth HQ
 \NEW{Sign}{\sMalachite}{
   \s\MYname	{A Vein of Malachite}
@@ -358,7 +387,7 @@
   \s\MYtext	{These rocks are worn smooth. They must have spent a lot of time in a river-bed. Ancient riverbeds are a great place to find geodes.
   
   {\bf If you would like to take a rock, place 1 hand on this sign for 30 seconds.}}
-  \s\MYitems {{multi{3}{\iCrystalGeode{}}}}
+  \s\MYitems {{multi{3}{\iCrystalGeode{}}} {multi{3}{\iRocks{}}}} %%50% chance of getting a geode
 }
 
 \NEW{Sign}{\sWineRack}{%%Flavor Text Sign!
@@ -380,6 +409,22 @@
   \s\MYloc	{-004}
   \s\MYtext	{A recent rock slide has taken out this part of the cellar. there are rocks scattered all over the floor. Watch your step!}
   \s\MYitems {}
+}
+
+\NEW{Sign}{\sStorageLocker}{%%Flavor Text Sign!
+  \s\MYname	{A Large Metal Storage Locker}
+  \s\MYloc	{-004}
+  \s\MYtext	{There is a large metal storage locker here. Inside is an old set of chipped china, a box of paperback books (they must be ancient!), a broken microscope, and a pair of galoshes with a hole in the left boot.}
+  \s\MYitems {}
+}
+
+\NEW{Sign}{\sToolShelf}{%%Flavor Text Sign!
+  \s\MYname	{A Long Shelf}
+  \s\MYloc	{-004}
+  \s\MYtext	{This shelf is covered in old tools. Some are so old that their uses are lost in time.
+  
+  {\bf If you would like to take an item from the shelf, place 1 hand on this sign for 30 seconds then take an item of your choice.}}
+  \s\MYitems {\iZinc{} \iSyringe{} \iTungsten{} \iWireStripper{} \iPhotodiode{} \iCanOfBeans{}}
 }
 
 %%Pond | Water HQ
@@ -407,6 +452,14 @@
   \s\MYtext	{A willow tree hangs over the pond here, offering shade and a nice resting spot. What a great place to lay back and watch the clouds go by.}
   \s\MYitems {}
 }
+
+\NEW{Sign}{\sStables}{%%Flavor Text Sign
+  \s\MYname	{An Empty Horse Stable}
+  \s\MYloc	{-032}
+  \s\MYtext	{There is an empty horse stable here. The family who lived here must have been incredibly rich to keep horses in the 27th century.}
+  \s\MYitems {}
+}
+
 
 %%Kitchen Signs | Fire HQ
 \NEW{Sign}{\sSink}{
@@ -473,6 +526,13 @@
   \s\MYitems {}
 }
 
+\NEW{Sign}{\sTable}{%%Flavor Text Sign
+  \s\MYname	{The Charred Remains of a Table}
+  \s\MYloc	{-030}
+  \s\MYtext	{The charred remains of a table are scattered across the floor. It must have been destroyed by a fire elemental.}
+  \s\MYitems {}
+}
+
 %%Human HQ
 \NEW{Sign}{\sGlassware}{
   \s\MYname	{A glassware cabinet}
@@ -481,6 +541,13 @@
   
   {\bf If you would like to take a vial from the cabinet place 1 hand on this sign for 15 seconds, then take a vial.} }
   \s\MYitems {{\multi{10}{\iVial{}}}}
+}
+
+\NEW{Sign}{\sMap}{
+  \s\MYname	{A Map of the World}
+  \s\MYloc	{-002}
+  \s\MYtext	{There is a map of the world on the wall. It shows the new boundaries of nations, and the areas decimated by elementals.}
+  \s\MYitems {}
 }
 
 %%Hallway off of -002 | Tower (Air HQ)
