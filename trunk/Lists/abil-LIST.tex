@@ -125,18 +125,47 @@ This information is transferable. You may freely tell other characters how to wo
 }
 
 %%Ele enslavement relevant abilities:
-\NEW{Abil}{\aEnslave}{
-  \s\MYname	{Enslavement}
-  \s\MYtext	{I attempt to enslave you. This action is only interruptible by characters who are not the target of this ability.}
-  \s\MYeffect	{This ability allows you attempt to enslave someone. Refer to the associated greensheet for details.}
-  \s\MYgreens	{\gEnslave{}}
+\NEW{Abil}{\aFireEnslave}{
+  \s\MYname	{Enslavement By Fire}
+  \s\MYtext	{I attempt to enslave you.}
+  \s\MYeffect	{This ability allows you attempt to enslave fire elementals and humans. This action has a 15 minute cool-down whether it works or not. Refer to the \gEnslave{} greensheet for details.}
+  \s\MYgreens	{}
+}
+
+\NEW{Abil}{\aEarthEnslave}{
+  \s\MYname	{Enslavement By Earth}
+  \s\MYtext	{I attempt to enslave you.}
+  \s\MYeffect	{This ability allows you attempt to enslave earth elementals and humans. This action has a 15 minute cool-down whether it works or not. Refer to the \gEnslave{} greensheet for details.}
+  \s\MYgreens	{}
+}
+
+\NEW{Abil}{\aAirEnslave}{
+  \s\MYname	{Enslavement By Air}
+  \s\MYtext	{I attempt to enslave you.}
+  \s\MYeffect	{This ability allows you attempt to enslave air elementals and humans. This action has a 15 minute cool-down whether it works or not. Refer to the \gEnslave{} greensheet for details.}
+  \s\MYgreens	{}
+}
+
+\NEW{Abil}{\aQEnslave}{
+  \s\MYname	{Enslavement By Quintessence}
+  \s\MYtext	{I attempt to enslave you.}
+  \s\MYeffect	{This ability allows you attempt to enslave any elemental faction, but not humans. {\bf For the purpose of this ability you have an effective CR of 6.} This action has a 15 minute cool-down whether it works or not. Refer to the \gEnslave{} greensheet for details.}
+  \s\MYgreens	{}
+}
+
+
+\NEW{Abil}{\aAziEnslave}{%%Grandmother has CR 15
+  \s\MYname	{Enslavement By Azi}
+  \s\MYtext	{I attempt to enslave you.}
+  \s\MYeffect	{This ability allows you attempt to enslave any elemental faction, but not humans. {\bf For the purpose of this ability you have an effective CR of 6.} This ability also allows you to assist/be assisted when enslaving a target (ie: 2 players using this ability have an effective CR of 12). This action has a 15 minute cool-down whether it works or not. Refer to the \gEnslave{} greensheet for details.}
+  \s\MYgreens	{}
 }
 
 %%Azi can resist enslavement
 \NEW{Abil}{\aResistEnslave}{
   \s\MYname	{Resist Enslavement}
   \s\MYtext	{I resist your attempt to enslave me.}
-  \s\MYeffect	{This ability allows you resist enslavement by elementals who use the \aEnslave{} ability on you. If you choose to, you can resist enslavement via this ability. You do not have to do so.
+  \s\MYeffect	{This ability allows you resist enslavement by elementals who use the any ``Enslavement via ...'' ability on you. If you choose to, you can resist enslavement via this ability. You do not have to do so.
   }
 }
 
