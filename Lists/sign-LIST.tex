@@ -144,51 +144,6 @@
   \s\MYtext	{{\Huge 487}}
 }
 
-%%Conduit location signs
-%%need to assign to locations
-\NEW{Sign}{\sLocationCoverSheet}{
-  \s\MYname	{A Possible Location of Conduit Contact.}
-  \s\MYloc	{}%%TBD
-  \s\MYtext	{It is possible that the conduit can be opened from this location. {\bf You must have an item capable of determining the ``Point of Conduit Contact'' in order to find out.}} 
-}
-
-\NEW{Sign}{\sConduitOne}{
-  \s\MYname	{A Possible Location of Conduit Contact}
-  \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 2922 \\ \hline
-  2:30-3:00 & 7726 \\ \hline
-  3:00-3:30 & 9826 \\ \hline
-  3:30-4:00 & 1820 \\ \hline
-  4:00-4:30 & 9291 \\ \hline
-  4:30-5:00 & 1276 \\ \hline
-  5:00-5:30 & 7865 \\ \hline
-  5:30-6:00 & 9844 \\ \hline
-\end{tabular}  } 
-  }
-  
-\NEW{Sign}{\sConduitTwo}{
-  \s\MYname	{A Possible Location of Conduit Contact}
-  \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 8766 \\ \hline
-  2:30-3:00  & 1542 \\ \hline
-  3:00-3:30  & 4098 \\ \hline
-  3:30-4:00  & 1052 \\ \hline
-  4:00-4:30  & 2242 \\ \hline
-  4:30-5:00  & 3391 \\ \hline
-  5:00-5:30  & 9994 \\ \hline
-  5:30-6:00  & 9213 \\ \hline
-\end{tabular}  } 
-  }
-%%Need to make the other 14 signs obv. but I have other things to do right now. this will be done by sign due-date
-
 %%GD Lab Signs 
   \NEW{Sign}{\sGDLab}{
   \s\MYname	{Katherine Strauss' Lab Space}
@@ -635,3 +590,55 @@
   \s\MYtext	{This section of wall is crumbling alarmingly. It looks like the ceiling could come down at any minute.}
   \s\MYitems {}
 }
+
+
+%%Conduit location signs
+%%need to assign to locations
+\NEW{Sign}{\sLocationCoverSheet}{
+  \s\MYname	{An Unsealed Possible Location of Conduit Contact}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{It is possible that the conduit can be opened from this location. {\bf You must have an item capable of determining the ``Point of Conduit Contact'' in order to find out.}} 
+}
+
+\NEW{Sign}{\sSealedLocationSheet}{
+  \s\MYname	{A Sealed Location}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{You cannot interact with this location until it is unsealed. ({\bf You cannot interact with this location unless you know otherwise.})} 
+}
+
+\NEW{SignMedium}{\sConduitOne}{
+  \s\MYname	{A Possible Location of Conduit Contact}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  
+\begin{tabular}{ l || l }
+  Time: & Active Number  \\ \hline \hline
+  2:00-2:30 & 2922 \\ \hline
+  2:30-3:00 & 7726 \\ \hline
+  3:00-3:30 & 9826 \\ \hline
+  3:30-4:00 & 1820 \\ \hline
+  4:00-4:30 & 9291 \\ \hline
+  4:30-5:00 & 1276 \\ \hline
+  5:00-5:30 & 7865 \\ \hline
+  5:30-6:00 & 9844 \\ \hline
+\end{tabular}  } 
+  }
+  
+\NEW{Sign}{\sConduitTwo}{
+  \s\MYname	{A Possible Location of Conduit Contact}
+  \s\MYloc	{}%%TBD
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  
+\begin{tabular}{ l || l }
+  Time: & Active Number  \\ \hline \hline
+  2:00-2:30  & 8766 \\ \hline
+  2:30-3:00  & 1542 \\ \hline
+  3:00-3:30  & 4098 \\ \hline
+  3:30-4:00  & 1052 \\ \hline
+  4:00-4:30  & 2242 \\ \hline
+  4:30-5:00  & 3391 \\ \hline
+  5:00-5:30  & 9994 \\ \hline
+  5:30-6:00  & 9213 \\ \hline
+\end{tabular}  } 
+  }
+%%Need to make the other 14 signs obv. but I have other things to do right now. this will be done by sign due-date
