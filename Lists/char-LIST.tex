@@ -67,6 +67,8 @@
   \FD\MYdesc	{} %% badge description
 
   \newstat\MYcr	{Combat Rating}{CR}{2} %% for DarkWater-style combat
+  \newstat\MYbeta	{$\beta$}{$\beta$}{0} % Elemental Strength
+  \newstat\MYalpha	{$\alpha$}{$\alpha$}{0} % Elemental Strength
 
 
   \FD\MYsex	{\male} %% \male, \female, \neuter, \ambiguous
@@ -194,6 +196,8 @@
   \s\MYitems	{\iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{},\mSeeWhite{}}
   \s\MYcr	{6}
+  \s\MYbeta	{3}
+  \s\MYalpha	{3}
  }
  
 \NEW{PC}{\cPyro}{ %%Fire second
@@ -209,6 +213,7 @@
   \s\MYitems	{\iFireEssence{} \iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
+  \s\MYbeta	{2}
  }
 
 \NEW{PC}{\cJuliet}{
@@ -224,6 +229,7 @@
   \s\MYitems	{\iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{4}
+  \s\MYbeta	{1}
 }
  
 \NEW{PC}{\cLoyal}{
@@ -239,6 +245,7 @@
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
+  \s\MYbeta	{2}
  }
 
 \NEW{PC}{\cRogue}{
@@ -254,6 +261,7 @@
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{} \iWireTightener{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
+  \s\MYbeta	{2}
 }
 
 \def\cMinionNumber{000} % TODO: need badge number
@@ -271,6 +279,7 @@
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{4}
+  \s\MYbeta	{1}
 }
  
 \NEW{PC}{\cKing}{ %%Air King
@@ -287,6 +296,7 @@
   \s\MYwhites	{\multi{10}{\wSealedConduit{}}}
   \s\MYmems {\mWhiteTech{} \mLoseEssence{}}
   \s\MYcr	{6}
+  \s\MYbeta	{3}
  }
 
 \NEW{PC}{\cNaturalist}{ 
@@ -302,6 +312,7 @@
   \s\MYitems	{\iAirEssence{} \iAirEssence{} \iAirEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
+  \s\MYbeta	{2}
 }
  
 \NEW{PC}{\cGD}{
@@ -318,6 +329,7 @@
   \s\MYwhites	{}
   \s\MYmems {\mGDCollaboration{} \mGDExperiment{} \mGDExperiment{} \mUnstickAvatar{}}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  }
  
 \NEW{PC}{\cAvatar}{
@@ -334,6 +346,7 @@
   \s\MYwhites	{}
   \s\MYmems {\mAvatarLoseEssence{} \mSeeWhite{} \mAvatarHearsBell{} \mVitalityFree{} \mConduitUnsticks{} } 
   \s\MYcr	{5}
+  \s\MYbeta	{2}
  }
  
 \NEW{PC}{\cDema}{ %%demagogue, human second in command
@@ -350,6 +363,7 @@
   \s\MYwhites	{}
   \s\MYmems {}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  } 
  
 \NEW{PC}{\cLeader}{ %%Leader of the humans
@@ -366,6 +380,7 @@
   \s\MYwhites	{}
   \s\MYmems {}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  }
  
 \def\cMSnumber{000}%filler number atm
@@ -384,6 +399,7 @@
   \s\MYwhites	{}
   \s\MYmems {}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  }
  
 \NEW{PC}{\cRomeo}{
@@ -400,6 +416,7 @@
   \s\MYwhites	{}
   \s\MYmems {\mAziRetape{}}
   \s\MYcr	{3}
+  \s\MYbeta	{0}
  }
  
 \NEW{PC}{\cScientist}{
@@ -416,6 +433,7 @@
   \s\MYwhites	{}
   \s\MYmems {\mSciTaste{} \mAziRetape{} \mSciAmaranth{}}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  }
  
 \NEW{PC}{\cDiplomat}{
@@ -432,6 +450,7 @@
   \s\MYwhites	{}
   \s\MYmems {\mStress{} \mAziRetape{}}
   \s\MYcr	{2}
+  \s\MYbeta	{0}
  }
 
 %%Here are the additional NPCs that may be summoned
@@ -441,12 +460,14 @@
   \s\MYname  {Young Quintessence}
   \s\MYfile{newQ.tex}
   \s\MYcr	{4}
+  \s\MYbeta	{1}
 }
 
 \NEW{NPC}{\cElderQ}{
   \s\MYname  {Stasis}
   \s\MYfile{elderQ.tex}
   \s\MYcr	{16}
+  \s\MYbeta	{5}
 }
 
 %Summoned quintessence elemental
@@ -454,6 +475,7 @@
   \s\MYname  {Young Elemental}
   \s\MYfile{newElemental.tex}
   \s\MYcr	{4}
+  \s\MYbeta	{1}
 }
 
 %Summoned fire elemental
@@ -461,6 +483,7 @@
   \s\MYname  {Gehenna}
   \s\MYfile{elderElemental.tex}
   \s\MYcr	{15}
+  \s\MYbeta	{0}
 }
 
 %GM's have extra copies of the enslave abilities to give to the corresponding NPC elementals.
