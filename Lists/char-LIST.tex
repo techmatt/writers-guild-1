@@ -68,8 +68,8 @@
 
   \newstat\MYcr	{Combat Rating}{CR}{2} %% for DarkWater-style combat
   \newstat\MYbeta	{$\beta$}{$\beta$}{0} % Elemental Strength
-  \newstat\MYalpha	{$\alpha$}{$\alpha$}{0} % Elemental Strength
-
+  \newstat\MYgamma	{$\gamma$}{$\gamma$}{0} % Elemental Type
+  %\newstat\MYzzzxr	{abc}{abcd}{0}
 
   \FD\MYsex	{\male} %% \male, \female, \neuter, \ambiguous
   \FD\MYrole	{} %% playerlist role
@@ -191,13 +191,13 @@
    \s\MYdesc     {}
  
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aFireEnslave{} \aModifierSummonFire{} \aFireWall{}}
   \s\MYitems	{\iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{},\mSeeWhite{}}
   \s\MYcr	{6}
   \s\MYbeta	{3}
-  \s\MYalpha	{3}
+  \s\MYgamma	{1}
  }
  
 \NEW{PC}{\cPyro}{ %%Fire second
@@ -208,12 +208,12 @@
     \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aFireEnslave{} \aModifierSummonFire{}}
   \s\MYitems	{\iFireEssence{} \iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
-  \s\MYbeta	{2}
+  \s\MYgamma	{1}
  }
 
 \NEW{PC}{\cJuliet}{
@@ -224,12 +224,13 @@
     \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aFireEnslave{} \aModifierSummonFire{}}
   \s\MYitems	{\iFireEssence{} \iFireEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{4}
   \s\MYbeta	{1}
+  \s\MYgamma	{1}
 }
  
 \NEW{PC}{\cLoyal}{
@@ -240,12 +241,13 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aEarthEnslave{} \aModifierSummonQuintessence{} \aModifierSummonEarth{} \aEarthTrap{} \aEarthSpeaker{}}
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
   \s\MYbeta	{2}
+  \s\MYgamma	{3}
  }
 
 \NEW{PC}{\cRogue}{
@@ -256,12 +258,13 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aEarthEnslave{} \aModifierSummonQuintessence{} \aModifierSummonEarth{} \aEarthSpeaker{}}
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{} \iWireTightener{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
   \s\MYbeta	{2}
+  \s\MYgamma	{3}
 }
 
 \def\cMinionNumber{000} % TODO: need badge number
@@ -274,12 +277,13 @@
    \s\MYdesc     {A smallish masculine earth elemental}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYabils	{\aEarthEnslave{} \aModifierSummonQuintessence{} \aModifierSummonEarth{} \aEarthSpeaker{}}
   \s\MYitems	{\iEarthEssence{} \iEarthEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{4}
   \s\MYbeta	{1}
+  \s\MYgamma	{3}
 }
  
 \NEW{PC}{\cKing}{ %%Air King
@@ -290,13 +294,14 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{} \bKnowQ{}}
-  \s\MYgreens	{\gSealingLocations{}}
+  \s\MYgreens	{\gSealingLocations{} \gEnslave{}}
   \s\MYabils	{\aAirEnslave{} \aDrawBlood{} \aModifierSummonAir{} \aAirTeleport{}}
   \s\MYitems	{\iAirEssence{} \iAirEssence{} \iAirEssence{} \iAirEssence{}}
   \s\MYwhites	{\multi{10}{\wSealedConduit{}}}
   \s\MYmems {\mWhiteTech{} \mLoseEssence{}}
   \s\MYcr	{6}
   \s\MYbeta	{3}
+  \s\MYgamma	{4}
  }
 
 \NEW{PC}{\cNaturalist}{ 
@@ -307,12 +312,13 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bElemental{}}
-  \s\MYgreens	{\nLearnAboutHumans{}}
+  \s\MYgreens	{\nLearnAboutHumans{} \gEnslave{}}
   \s\MYabils	{\aAirEnslave{} \aCollaborate{} \aUnsealConduit{} \aModifierSummonAir{} \aFirstAid{}}
   \s\MYitems	{\iAirEssence{} \iAirEssence{} \iAirEssence{}}
   \s\MYmems {\mLoseEssence{}}
   \s\MYcr	{5}
   \s\MYbeta	{2}
+  \s\MYgamma	{4}
 }
  
 \NEW{PC}{\cGD}{
@@ -323,13 +329,13 @@
    \s\MYdesc     {}
    
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\nElectromagnet{} \gEthics{} }
+  \s\MYgreens	{\nElectromagnet{} \gEthics{} \gEnslave{}}
   \s\MYabils	{\aWorkConduit{} \aUnsealConduit{} \aModifierElectromagnet{}}
   \s\MYitems	{\iElectromagnet{} \iTricorder{} \nTricorder{}}
   \s\MYwhites	{}
   \s\MYmems {\mGDCollaboration{} \mGDExperiment{} \mGDExperiment{} \mUnstickAvatar{}}
   \s\MYcr	{2}
-  \s\MYbeta	{0}
+%  \s\MYbeta	{0}
  }
  
 \NEW{PC}{\cAvatar}{
@@ -340,13 +346,14 @@
    \s\MYdesc     {A stern man with graying red hair}   
    
   \s\MYblues	{\bElemental{} \bHumanHistory{} \bKnowQ{}}
-  \s\MYgreens	{ \gTreaty{} }
+  \s\MYgreens	{ \gTreaty{} \gEnslave{}}
   \s\MYabils	{\aQEnslave{} \aResistEnslave{} \aModifierSummonQuintessence{} \aGlowInDark{}}
   \s\MYitems	{\iQEssence{}}
   \s\MYwhites	{}
   \s\MYmems {\mAvatarLoseEssence{} \mSeeWhite{} \mAvatarHearsBell{} \mVitalityFree{} \mConduitUnsticks{} } 
   \s\MYcr	{5}
   \s\MYbeta	{2}
+  \s\MYgamma	{5}
  }
  
 \NEW{PC}{\cDema}{ %%demagogue, human second in command
@@ -357,13 +364,14 @@
    \s\MYdesc     {A passionate young man in a fashionable suit}   
   
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\gEthics{} \gTreaty{}}
+  \s\MYgreens	{\gEthics{} \gTreaty{} \gEnslave{}}
   \s\MYabils	{\aFirstAid{}}
   \s\MYitems	{\iLabKey{}}
   \s\MYwhites	{}
   \s\MYmems {}
   \s\MYcr	{2}
   \s\MYbeta	{0}
+  \s\MYgamma	{1}
  } 
  
 \NEW{PC}{\cLeader}{ %%Leader of the humans
@@ -374,7 +382,7 @@
    \s\MYdesc     {}   
    
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\gEthics{} \gTreaty{}}
+  \s\MYgreens	{\gEthics{} \gTreaty{} \gEnslave{}}
   \s\MYabils	{}
   \s\MYitems	{\iEleShield{}}
   \s\MYwhites	{}
@@ -393,7 +401,7 @@
    \s\MYdesc     {}  
     
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\nEnslavementResearch{} \gEthics{} }
+  \s\MYgreens	{\nEnslavementResearch{} \gEthics{} \gEnslave{}}
   \s\MYabils	{\aWorkConduit{} \aMadness{}}
   \s\MYitems	{\iTablet{} \iTricorder{} \iLabKey{} \iAziTape{} \nTricorder{}}
   \s\MYwhites	{}
@@ -410,13 +418,14 @@
    \s\MYdesc     {}  
     
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\nBelt{}}
+  \s\MYgreens	{\nBelt{} \gEnslave{}}
   \s\MYabils	{\aResistEnslave{} \aFirstAid{}}
   \s\MYitems	{}
   \s\MYwhites	{}
   \s\MYmems {\mAziRetape{}}
   \s\MYcr	{3}
   \s\MYbeta	{0}
+  \s\MYgamma	{1}
  }
  
 \NEW{PC}{\cScientist}{
@@ -427,7 +436,7 @@
    \s\MYdesc     {}   
   
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{\nWhiteResearch{} \gEthics{}}
+  \s\MYgreens	{\nWhiteResearch{} \gEthics{} \gEnslave{}}
   \s\MYabils	{\aWorkConduit{} \aResistEnslave{} \aFirstAid{}}
   \s\MYitems	{\iWhitePowder{}}
   \s\MYwhites	{}
@@ -444,7 +453,7 @@
    \s\MYdesc     {An energetic woman with brown hair}
      
   \s\MYblues	{\bHumanHistory{}}
-  \s\MYgreens	{ \gTreaty{} }
+  \s\MYgreens	{ \gTreaty{} \gEnslave{}}
   \s\MYabils	{\aResistEnslave{}}
   \s\MYitems	{}
   \s\MYwhites	{}
@@ -459,8 +468,11 @@
 \NEW{NPC}{\cNewQ}{
   \s\MYname  {Young Quintessence}
   \s\MYfile{newQ.tex}
+  
+  \s\MYgreens	{\gEnslave{}}
   \s\MYcr	{4}
   \s\MYbeta	{1}
+  \s\MYgamma	{5}
 }
 
 \NEW{NPC}{\cElderQ}{
@@ -468,12 +480,15 @@
   \s\MYfile{elderQ.tex}
   \s\MYcr	{16}
   \s\MYbeta	{5}
+  \s\MYgamma	{5}
 }
 
 %Summoned quintessence elemental
 \NEW{NPC}{\cNewElemental}{
   \s\MYname  {Young Elemental}
   \s\MYfile{newElemental.tex}
+  
+  \s\MYgreens	{\gEnslave{}}
   \s\MYcr	{4}
   \s\MYbeta	{1}
 }
@@ -482,8 +497,10 @@
 \NEW{NPC}{\cElder}{
   \s\MYname  {Gehenna}
   \s\MYfile{elderElemental.tex}
+  \s\MYgreens	{\gEnslave{}}
   \s\MYcr	{15}
-  \s\MYbeta	{0}
+  \s\MYbeta	{5}
+  \s\MYgamma	{1}
 }
 
 %GM's have extra copies of the enslave abilities to give to the corresponding NPC elementals.
