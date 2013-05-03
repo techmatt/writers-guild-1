@@ -40,9 +40,6 @@
   \append\MYmark{\mbox{ ~\MYcapacity-Hand~Capacity~ }}}
 \def\physrepped#{%
   \append\MYmark{ ~PHYSREPPED~ }}
-\def\alpha#1{%
-  \s\MYalpha{#1}%
-  \append\MYmark{\mbox{ ~\MYalpha-Hand~Bulky~ }}}
 
 %%%%%
 %% ItemPacket macros are for item cards with an attached packet.
@@ -186,7 +183,7 @@
 \NEW{Item}{\iWhitePowder}{%%Azi Sci
   \s\MYname     {A Mysterious White Powder}
   \s\MYnumber   {\iWhiteNumber{}}
-  \s\MYtext     {You do not know what this substance is.}
+  \s\MYtext     {You do not know what this substance is.  ($\gamma$ = 5)}
   \unstash{}
 }
 
@@ -210,7 +207,8 @@
   if you teach me about how to use it.  Thanks!
   \\
   \cMinion{}
-  }
+  
+  ($\gamma$ = 3)}
   \physrepped{}
   \bulky{1}
 }
@@ -225,7 +223,8 @@ My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees
 \\
 Sincerely,\\
 \cNaturalist{}
-}
+
+($\gamma$ = 4)}
 }
 
 \NEW{Item}{\iNoteNatAziSci}{%%AziSci
@@ -238,7 +237,8 @@ My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees
 \\
 Sincerely,\\
 \cNaturalist{}
-}
+
+($\gamma$ = 4)}
 }
 
 \NEW{Item}{\iAziTape}{%%MS
@@ -499,7 +499,7 @@ Sincerely,\\
 \NEW{Item}{\iAirplanePiece}{%%Azi Lab Bench (can't carry it around) | Azi Lab
   \s\MYname	{Airplane Fragment}
   \s\MYnumber	{999}
-  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that may have crashed due to elemental interference.}
+  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that may have crashed due to elemental interference. ($\gamma$ = 4)}
   \bulky{2}
 }
 
