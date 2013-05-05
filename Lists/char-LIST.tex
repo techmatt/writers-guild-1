@@ -461,6 +461,57 @@
   \s\MYcr	{2}
   \s\MYbeta	{0}
  }
+ 
+\NEW{PC}{\cMiniWater}{
+   \s\MYname	{Mist}
+   \s\MYfile	{miniWater.tex}
+   \s\MYsex      {\male}
+   \s\MYnumber	{}
+   \s\MYdesc     {A very young water elemental}
+   
+  \s\MYblues	{\bElemental{}}
+  \s\MYgreens	{\gEnslave{}}
+  \s\MYabils	{\aModifierSummonWater{}}
+  \s\MYitems	{\iWaterEssence{}}
+  \s\MYmems {\mLoseEssence{}}
+  \s\MYcr	{3}
+  \s\MYbeta	{1}
+  \s\MYgamma	{2}
+}
+
+\NEW{PC}{\cMiniEarth}{
+   \s\MYname	{Pebble}
+   \s\MYfile	{miniEarth.tex}
+   \s\MYsex      {\male}
+   \s\MYnumber	{}
+   \s\MYdesc     {A very young earth elemental}
+   
+  \s\MYblues	{\bElemental{}}
+  \s\MYgreens	{\gEnslave{}}
+  \s\MYabils	{\aModifierSummonEarth{} \aEarthSpeaker{}}
+  \s\MYitems	{\iEarthEssence{}}
+  \s\MYmems {\mLoseEssence{}}
+  \s\MYcr	{3}
+  \s\MYbeta	{1}
+  \s\MYgamma	{3}
+}
+
+\NEW{PC}{\cMiniAir}{
+   \s\MYname	{Wisp}
+   \s\MYfile	{miniAir.tex}
+   \s\MYsex      {\male}
+   \s\MYnumber	{}
+   \s\MYdesc     {A very young air elemental}
+   
+  \s\MYblues	{\bElemental{}}
+  \s\MYgreens	{\gEnslave{}}
+  \s\MYabils	{\aModifierSummonAir{} \aModifierSummonWater{} \aLearnSong{}}
+  \s\MYitems	{\iAirEssence{}}
+  \s\MYmems {\mLoseEssence{}}
+  \s\MYcr	{3}
+  \s\MYbeta	{1}
+  \s\MYgamma	{4}
+}
 
 %%Here are the additional NPCs that may be summoned
 
@@ -508,8 +559,8 @@
 \NEW{NPC}{\cGM}{
   \s\MYname  {We are the game masters.}
   \s\MYfile{GM.tex}
-  \s\MYabils	{\aModifierChannelWhite{} \aDominate{} \aAziEnslave{} \aAziEnslave{} \aAziEnslave{} \aQEnslave{} \aFireEnslave{} \aEarthEnslave{} \aAirEnslave{}}
-  \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iWaterEssence{} \iWaterEssence{} \iAirEssence{} \iAirEssence{} 
+  \s\MYabils	{\aModifierChannelWhite{} \aDominate{} \aAziEnslave{} \aAziEnslave{} \aAziEnslave{} \aQEnslave{} \aFireEnslave{} \aEarthEnslave{} \aAirEnslave{} \aModifierSummonQuintessence{} \aModifierSummonFire{} \aModifierSummonEarth{}}
+  \s\MYitems	{\iEarthEssence{} \iEarthEssence{} \iEarthEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iFireEssence{} \iAirEssence{} \iAirEssence{} 
   \iQEssence{} \iQEssence{} \iQEssence{} \iQEssence{} \iQEssence{}}
   \s\MYcr	{7777}
 }
