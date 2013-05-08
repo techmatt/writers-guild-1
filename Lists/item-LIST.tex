@@ -185,8 +185,9 @@
 \NEW{Item}{\iWhitePowder}{%%Azi Sci
   \s\MYname     {A Mysterious White Powder}
   \s\MYnumber   {\iWhiteNumber{}}
-  \s\MYtext     {You do not know what this substance is.  ($\gamma$ = 5)}
+  \s\MYtext     {You do not know what this substance is.}
   \unstash{}
+  \tricorder{5}
 }
 
 \NEW{Item}{\iPuddle}{%%MiniWater
@@ -194,6 +195,29 @@
   \s\MYnumber	{711}
   \s\MYtext	{{\large --BOUND--} There is a substantial puddle of water on the floor. I hope no one slips in it.
   This item is not transferable on its own, and may not be picked up or moved except with a bucket, bowl, or other container.}
+  \tricorder{2}
+}
+
+\NEW{Item}{\iNoteWaterEarth}{%%GD
+\s\MYname  {A Soggy Note Painted on Fabric}
+%\s\MYnumber {629} (the item is already very big, and the # serves no purpose)
+\s\MYtext   {Earth Elementals:
+\\
+I am writing this message in some desperation. One of my youngest elementals has completely disappeared recently. We suspect the foulest of play, but have no proof. When word reached us of \cEarthKing{}'s illness (yes, word has indeed reached us. We are deeply saddened by the news.) I began to suspect that even fouler things were afoot. I believe that someone has captured and destroyed one of my subjects in order to obtain \iWaterEssence{}. A sufficiently powerful elemental could use \iWaterEssence{} to make a potent poison. I suspect that this is what ails your king.
+\\
+Please accept this note as a sign of water's good will and help us get to the bottom of this mystery.
+\\
+Sincerely,\\
+\cWaterQueen{}, Queen of all Water
+}
+  \tricorder{2}
+}
+
+\NEW{Item}{\iOlympus}{%%Rogue and Loyal
+  \s\MYname	{A Sample of the Earth King's Blood}
+  \s\MYnumber	{711}
+  \s\MYtext	{This is a sample of \cEarthKing{}'s blood. Maybe an analysis could help determine what is wrong with him.}
+  \tricorder{2, 4}
 }
 
 \NEW{Item}{\iElectromagnet}{%%GD
@@ -203,6 +227,34 @@
   \physrepped{}
   \bulky{1}
   \unstash{}
+}
+
+\NEW{Item}{\iNoteNatGD}{%%GD
+\s\MYname  {A Note}
+%\s\MYnumber {690} (the item is already very big, and the # serves no purpose)
+\s\MYtext   {\emph{This is the letter that blew into your bedroom through an open window, scrawled in crude, childlike handwriting by someone who quite clearly only recently learned how to write.  It reads:}\\
+Dear \cGD{\intro},
+\\
+My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees Humans.  I have Hearrd about your Work Studeeing Elemenntals, and that You will be Presennt at the Elemenntal Conference.  I would be Innterested in Learning More about your Reesearch, and hope to Be able to Speek with you and Share our Knowlege.
+\\
+Sincerely,\\
+\cNaturalist{}
+}
+  \tricorder{4}
+}
+
+\NEW{Item}{\iNoteNatAziSci}{%%AziSci
+\s\MYname  {A Note}
+%\s\MYnumber {740} (the item is already very big, and the # serves no purpose)
+\s\MYtext   {\emph{This is the letter that blew into your bedroom through an open window, scrawled in crude, childlike handwriting by someone who quite clearly only recently learned how to write.  It reads:}\\
+Dear \cScientist{\intro},
+\\
+My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees Humans.  I have Hearrd about your Work Studeeing Elemenntals, and that You will be Presennt at the Elemenntal Conference.  I would be Innterested in Learning More about your Reesearch, and hope to Be able to Speek with you and Share our Knowlege.
+\\
+Sincerely,\\
+\cNaturalist{}
+}
+\tricorder{4}
 }
 
 \NEW{Item}{\iTablet}{%%MS
@@ -216,38 +268,10 @@
   if you teach me about how to use it.  Thanks!
   \\
   \cMinion{}
-  
-  ($\gamma$ = 3)}
+  }
   \physrepped{}
   \bulky{1}
-}
-
-\NEW{Item}{\iNoteNatGD}{%%GD
-\s\MYname  {A Note}
-%\s\MYnumber {690} (the item is already very big, and the # serves no purpose)
-\s\MYtext   {\emph{This is the letter that blew into your bedroom through an open window, scrawled in crude, childlike handwriting by someone who quite clearly only recently learned how to write.  It reads:}\\
-Dear \cGD{\intro},
-\\
-My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees Humans.  I have Hearrd about your Work Studeeing Elemenntals, and that You will be Presennt at the Elemenntal Conference.  I would be Innterested in Learning More about your Reesearch, and hope to Be able to Speek with you and Share our Knowlege.
-\\
-Sincerely,\\
-\cNaturalist{}
-
-($\gamma$ = 4)}
-}
-
-\NEW{Item}{\iNoteNatAziSci}{%%AziSci
-\s\MYname  {A Note}
-%\s\MYnumber {740} (the item is already very big, and the # serves no purpose)
-\s\MYtext   {\emph{This is the letter that blew into your bedroom through an open window, scrawled in crude, childlike handwriting by someone who quite clearly only recently learned how to write.  It reads:}\\
-Dear \cScientist{\intro},
-\\
-My Name is \cNaturalist{}.  I am an Air Elemenntal, and a Naturalist who Studees Humans.  I have Hearrd about your Work Studeeing Elemenntals, and that You will be Presennt at the Elemenntal Conference.  I would be Innterested in Learning More about your Reesearch, and hope to Be able to Speek with you and Share our Knowlege.
-\\
-Sincerely,\\
-\cNaturalist{}
-
-($\gamma$ = 4)}
+  \tricorder{3}
 }
 
 \NEW{Item}{\iAziTape}{%%MS
@@ -294,6 +318,7 @@ Sincerely,\\
   \s\MYnumber	{561}
   \s\MYtext	{{\large --BOUND--} This is a piece of fire elemental essence. 
   It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  %\tricorder{1}
 }
 
 \NEW{Item}{\iEarthEssence}{%%Earth Eles
@@ -301,6 +326,7 @@ Sincerely,\\
   \s\MYnumber	{349}
   \s\MYtext	{{\large --BOUND--} This is a piece of earth elemental essence. 
   It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  %\tricorder{3}
 }
 
 \NEW{Item}{\iAirEssence}{%%Air Eles
@@ -308,6 +334,7 @@ Sincerely,\\
   \s\MYnumber	{829}
   \s\MYtext	{{\large --BOUND--} This is a piece of air elemental essence. 
   It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  %\tricorder{4}
 }
 
 \NEW{Item}{\iWaterEssence}{%%Air Eles
@@ -315,6 +342,7 @@ Sincerely,\\
   \s\MYnumber	{313}
   \s\MYtext	{{\large --BOUND--} This is a piece of water elemental essence. 
   It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  %\tricorder{2}
 }
 
 \NEW{Item}{\iQEssence}{%%Q Eles
@@ -322,6 +350,7 @@ Sincerely,\\
   \s\MYnumber	{529}
   \s\MYtext	{{\large --BOUND--} This is a piece of quintessence elemental essence. 
  It is not transferable unless it is taken via a specific mechanic, or the owner dies - in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+ %\tricorder{5}
 }
 
 
@@ -446,6 +475,7 @@ Sincerely,\\
   If you are an elemental: +1CR for 10 minutes. You feel extremely amiable toward the person who gave you this. \textbf{You can no longer enslave this person, and you cannot attack them unless provoked.} If you are a wounded elemental, administering Elementium heals you. You are now just knocked out.
   }
   \unstash{}
+  \tricorder{5}
 }
 
 \NEW{ItemFold}{\iWhiteQ}{%%Avatar
@@ -457,6 +487,7 @@ Sincerely,\\
   If you are an elemental: +1CR for 10 minutes. You feel extremely amiable toward the person who gave you this. \textbf{You can no longer enslave this person, and you cannot attack them unless provoked.} If you are a wounded elemental, administering Amaranth heals you. You are now just knocked out.
   }
   \unstash{}
+  \tricorder{5}
 }
 
 %%MS item fetch quest
@@ -519,8 +550,9 @@ Sincerely,\\
 \NEW{Item}{\iAirplanePiece}{%%Azi Lab Bench (can't carry it around) | Azi Lab
   \s\MYname	{Airplane Fragment}
   \s\MYnumber	{802}
-  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that may have crashed due to elemental interference. ($\gamma$ = 4)}
+  \s\MYtext	{A twisted, scorched piece of metal from one of the airplanes that may have crashed due to elemental interference.}
   \bulky{2}
+  \tricorder{4}
 }
 
 %%Naturalist Research humans notebook
