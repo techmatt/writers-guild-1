@@ -342,7 +342,7 @@
   \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. 
   
   {\bf If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}}
-  \s\MYitems {{multi{10}{\iCopper{}}}}
+  \s\MYitems {{\multi{10}{\iCopper{}}}}
 }
 
 \NEW{Sign}{\sGeodes}{
@@ -351,7 +351,7 @@
   \s\MYtext	{These rocks are worn smooth. They must have spent a lot of time in a river bed. Ancient river beds are a great place to find geodes.
   
   {\bf If you would like to take a rock, place 1 hand on this sign for 30 seconds.}}
-  \s\MYitems {{multi{3}{\iCrystalGeode{}}} {multi{3}{\iRocks{}}}} %%50% chance of getting a geode
+  \s\MYitems {{\multi{3}{\iCrystalGeode{}}} {\multi{3}{\iRocks{}}}} %%50% chance of getting a geode
 }
 
 \NEW{Sign}{\sWineRack}{%%Flavor Text Sign!
@@ -378,7 +378,7 @@
   \s\MYtext	{A recent rock slide has taken out this part of the cellar. There are rocks scattered all over the floor, but none of them look very interesting.
   
   {\bf If you want a rock anyway, place 1 hand on this sign for 30 seconds, then take \iCrystalGeode{}.}}
-  \s\MYitems {{multi{1}{\iCrystalGeode{}}} {multi{3}{\iRocks{}}}} %%25% chance of  geode
+  \s\MYitems {{\multi{1}{\iCrystalGeode{}}} {\multi{3}{\iRocks{}}}} %%25% chance of  geode
 }
 
 \NEW{Sign}{\sStorageLocker}{%%Flavor Text Sign!
@@ -414,7 +414,8 @@
   \s\MYname     {A quiet spot}
   \s\MYloc      {-032}
   \s\MYtext     {This is a pleasant, quiet spot a little ways away from the pond and stream.  This would be a good place to meditate.  You cannot interact with this sign unless you know otherwise.}
-  \s\MYitems {{multi{6}{\iWhiteQ{}}}}
+  \s\MYitems {{\multi{6}{\iWhiteQ{}}}}
+  %\s\MYitems {\iWhiteQ{} \iWhiteQ{} \iWhiteQ{} \iWhiteQ{} \iWhiteQ{} \iWhiteQ{}}
 }
 
 \NEW{Sign}{\sStream}{%%Flavor Text Sign
@@ -609,7 +610,7 @@
 \NEW{SignMedium}{\sConduitOne}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -627,7 +628,7 @@
 \NEW{SignMedium}{\sConduitTwo}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -645,7 +646,7 @@
 \NEW{SignMedium}{\sConduitThree}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -664,7 +665,7 @@
 \NEW{SignMedium}{\sConduitFour}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -683,7 +684,7 @@
 \NEW{SignMedium}{\sConduitFive}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -701,7 +702,7 @@
 \NEW{SignMedium}{\sConduitSix}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -719,7 +720,7 @@
 \NEW{SignMedium}{\sConduitSeven}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -737,14 +738,14 @@
 \NEW{SignMedium}{\sConduitEight}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
   2:00-2:30  & 2321  \\ \hline
   2:30-3:00  & 5399  \\ \hline
   3:00-3:30  & 5331  \\ \hline
-  3:30-4:00  & 2453  \\ \hline
+  3:30-4:00  & 2435  \\ \hline
   4:00-4:30  & 4305  \\ \hline
   4:30-5:00  & 9863  \\ \hline
   5:00-5:30  & 8981  \\ \hline
@@ -755,7 +756,7 @@
 \NEW{SignMedium}{\sConduitNine}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -773,7 +774,7 @@
 \NEW{SignMedium}{\sConduitTen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -791,7 +792,7 @@
 \NEW{SignMedium}{\sConduitEleven}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -809,7 +810,7 @@
 \NEW{SignMedium}{\sConduitTwelve}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -827,7 +828,7 @@
 \NEW{SignMedium}{\sConduitThirteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -845,7 +846,7 @@
 \NEW{SignMedium}{\sConduitFourteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -863,7 +864,7 @@
 \NEW{SignMedium}{\sConduitFifteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -881,7 +882,7 @@
 \NEW{SignMedium}{\sConduitSixteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -899,7 +900,7 @@
 \NEW{SignMedium}{\sConduitSeventeen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
@@ -917,7 +918,7 @@
 \NEW{SignMedium}{\sConduitEighteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. Numbers associated with previous or future time slots are not active \textbf{and cannot be checked}.
+  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
   
 \begin{tabular}{ l || l }
   Time: & Active Number  \\ \hline \hline
