@@ -4220,8 +4220,8 @@
 \newdimen\bookheight     \bookheight = 3in
 \def\transfer{Freely Transferable}
 \def\notebooktext{A Notebook.  Opened pages are in-game items;
-  un-opened pages are not.  You may start with the first page open.
-  You may only open pages when directed to.}
+  un-opened pages are not.  You may open page 1 when game starts, but
+  you may only open other pages when directed.}
 \def\familydefault{\sfdefault}
 
 
@@ -4302,7 +4302,11 @@
         \vfill
         \parbox{.3\hsize}{\centering%
           {\bfseries\Large\identifier}\\[.5\whitespace]%
-          \tiny Do not open this page until you are directed to do so.%
+          \if\identifier 1\relax%
+            \tiny Do not open this page until game starts.%
+          \else%
+            \tiny Do not open this page until you are directed to do so.%
+          \fi%
           }\break
         \vfill
         }%
@@ -4421,8 +4425,8 @@
 %%%%%
 %% make them non-transferable
 \def\transfer{Not Transferable}
-\def\notebooktext{This notebook is out-of-game.  You may start with
-  the first page open.  You may only open pages when directed to.}
+\def\notebooktext{This notebook is out-of-game.  You may open page 1
+  when game starts, but you may only open other pages when directed.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
