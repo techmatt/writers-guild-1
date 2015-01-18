@@ -296,9 +296,9 @@
 
 %%in all 3 labs
 \NEW{Sign}{\sBatterySource}{%%3 sources in game, each has 3 batteries, for a total of 9 available in game.
-  \s\MYname	{A Chemical Stock Room}
+  \s\MYname	{A Stock Room}
   \s\MYloc	{200-002}
-  \s\MYtext	{This chemical stock room has sulfuric acid in it. You can build a battery here. To do so, take 2 minutes and consume 1 Copper (item number: \iCopper{\MYnumber{}}), and 1 \iZinc{} (tear them up), then take \iBattery{}. If this location has no batteries available, all of the sulfuric acid has been consumed and you must find another source.}
+  \s\MYtext	{There is a stock room here with batteries. If you would like to take a \iBattery{}, place 1 hand on this sign for 30 seconds, then take a battery.}
   \s\MYitems  {\multi{3}{\iBattery{}}}
 }
 
@@ -309,7 +309,7 @@
   \s\MYtext	{There is a Caretaker's Cottage tucked away at the edge of the gardens. An estate this big ought to have a caretaker to maintain the grounds, but it is clear that no one has lived here for years. Luckily, much of the caretaker equipment is still in working order.
   
   {\bf If you would like to take something from the cottage, place 1 hand on this sign for 30 seconds, then take the item of your choice.}}
-  \s\MYitems  {\multi{3}{\iLye{}} \iWireTightener{} \iBucket{}}
+  \s\MYitems  {\multi{3}{\iLye{}} \iWireTightener{} \iBucket{} \multi{3}{\iLockTight{}}}
 }
 
 
@@ -339,10 +339,7 @@
 \NEW{Sign}{\sMalachite}{
   \s\MYname	{A Vein of Malachite}
   \s\MYloc	{-004}
-  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. 
-  
-  {\bf If you would like to take a piece of malachite, place 1 hand on this sign for 30 seconds.}}
-  \s\MYitems {{\multi{10}{\iCopper{}}}}
+  \s\MYtext	{There is a vein of malachite in the rock here. Malachite is a naturally occurring form of copper. }
 }
 
 \NEW{Sign}{\sGeodes}{
@@ -378,7 +375,7 @@
   \s\MYtext	{A recent rock slide has taken out this part of the cellar. There are rocks scattered all over the floor, but none of them look very interesting.
   
   {\bf If you want a rock anyway, place 1 hand on this sign for 30 seconds, then take \iCrystalGeode{}.}}
-  \s\MYitems {{\multi{1}{\iCrystalGeode{}}} {\multi{3}{\iRocks{}}}} %%25% chance of  geode
+  \s\MYitems {{\multi{4}{\iCrystalGeode{}}} {\multi{6}{\iRocks{}}}} %%40% chance of  geode
 }
 
 \NEW{Sign}{\sStorageLocker}{%%Flavor Text Sign!
@@ -394,7 +391,7 @@
   \s\MYtext	{This shelf is covered in old tools. Some are so old that their uses are lost in time.
   
   {\bf If you would like to take an item from the shelf, place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {\iZinc{} \iSyringe{} \iTungsten{} \iWireStripper{} \iPhotodiode{} \iCanOfBeans{}}
+  \s\MYitems {\iTungsten{} \iWireStripper{} \iPhotodiode{} \iCanOfBeans{}}
 }
 
 %%Pond | Water HQ
@@ -405,7 +402,7 @@
   
   The pond can be used as a source of water.
   
-  {\bf If you draw water from the pond for any reason, the item in which you put the water acquires an $\alpha$ score of ``2''.} (Write ``$\gamma$ = 2'' on the item.)}
+  {\bf If you draw water from the pond for any reason, the item in which you put the water acquires an $\gamma$ score of ``2''.} (Write ``$\gamma$ = 2'' on the item.)}
   \s\MYitems {}
 }
 
@@ -479,7 +476,7 @@
     
   This lava pool can also be used as a heat source, {\bf but if you remain within 1 ZoC of the lava for more than 1 minute, you suffer from heat fatigue. Only fire elementals are immune to this effect.} (you can only walk heel to toe for the next 3 minutes).
   }
-  \s\MYitems {\iLavaEmber{} \iLavaEmber{} \iLavaEmber{}}
+  \s\MYitems {\iLavaEmber{} \iLavaEmber{} \iLavaEmber{} \iLavaEmber{} \iLavaEmber{}}
 }
 
 \NEW{Sign}{\sKitchenCabinet}{
@@ -517,15 +514,6 @@
 }
 
 %%Human HQ
-\NEW{Sign}{\sGlassware}{
-  \s\MYname	{A Glassware Cabinet}
-  \s\MYloc	{-002}
-  \s\MYtext	{This is a glass front cabinet for storing glassware. You can see many tiny vials inside the cabinet. I wonder why there are so many?
-  
-  {\bf If you would like to take a vial from the cabinet place 1 hand on this sign for 15 seconds, then take a vial.} }
-  \s\MYitems {{\multi{10}{\iVial{}}}}
-}
-
 \NEW{Sign}{\sMap}{
   \s\MYname	{A Map of the World}
   \s\MYloc	{-002}
@@ -540,7 +528,7 @@
   \s\MYtext	{There is a huge pile of scrap metal here. Air elementals must collect them for some reason. Maybe it is because they reflect the light of the sun? 
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {{\multi{10}{\iZinc{}}} \iTungsten{} \iTungsten{} \iAluminum{} \iAluminum{}}
+  \s\MYitems {{\multi{3}{\iHandCrank{}}} \iTungsten{} \iTungsten{} \iAluminum{} \iAluminum{}}
 }
 
 \NEW{Sign}{\sWindy}{%%AOE sign | Need to put a tape strip down on the floor to get attention
@@ -566,7 +554,7 @@
   \s\MYtext	{There is a pile of broken and discarded tools here. They must be left over from the original lab. Maybe some of them are still functional?
   
   If you would like to search the pile for something useful, {\bf place 1 hand on this sign for 30 seconds then take an item of your choice.}}
-  \s\MYitems {{\multi{4}{\iSyringe{}}} \iWireStripper{} \iSiliconeMitt{}}
+  \s\MYitems {\iWireStripper{} \iSiliconeMitt{}}
 }
 
 \NEW{Sign}{\sOrganizerBox}{
@@ -610,325 +598,107 @@
 \NEW{SignMedium}{\sConduitOne}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 2922 \\ \hline
-  2:30-3:00 & 7726 \\ \hline
-  3:00-3:30 & 9826 \\ \hline
-  3:30-4:00 & 1820 \\ \hline
-  4:00-4:30 & 9291 \\ \hline
-  4:30-5:00 & 1276 \\ \hline
-  5:00-5:30 & 7865 \\ \hline
-  5:30-6:00 & 9844 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 2:00 pm - 2:30 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitTwo}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 8766 \\ \hline
-  2:30-3:00  & 1542 \\ \hline
-  3:00-3:30  & 4098 \\ \hline
-  3:30-4:00  & 1052 \\ \hline
-  4:00-4:30  & 2242 \\ \hline
-  4:30-5:00  & 3391 \\ \hline
-  5:00-5:30  & 9994 \\ \hline
-  5:30-6:00  & 9213 \\ \hline
-\end{tabular}  } 
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 2:00 pm - 2:30 pm} } 
 }
 
 \NEW{SignMedium}{\sConduitThree}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 9130  \\ \hline
-  2:30-3:00  & 6818  \\ \hline
-  3:00-3:30  & 4380  \\ \hline
-  3:30-4:00  & 4898  \\ \hline
-  4:00-4:30  & 8786  \\ \hline
-  4:30-5:00  & 6670  \\ \hline
-  5:00-5:30  & 3814  \\ \hline
-  5:30-6:00  & 7109  \\ \hline
-\end{tabular}  
-}   
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 2:30 pm - 3:00 pm} }   
 }
   
 \NEW{SignMedium}{\sConduitFour}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 6874  \\ \hline
-  2:30-3:00  & 1948  \\ \hline
-  3:00-3:30  & 3493  \\ \hline
-  3:30-4:00  & 7420  \\ \hline
-  4:00-4:30  & 3259  \\ \hline
-  4:30-5:00  & 2757  \\ \hline
-  5:00-5:30  & 3303  \\ \hline
-  5:30-6:00  & 6724  \\ \hline
-\end{tabular}
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 2:30 pm - 3:00 pm} }
 }
   
 \NEW{SignMedium}{\sConduitFive}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 9297  \\ \hline
-  2:30-3:00  & 7034  \\ \hline
-  3:00-3:30  & 5357  \\ \hline
-  3:30-4:00  & 6598  \\ \hline
-  4:00-4:30  & 5520  \\ \hline
-  4:30-5:00  & 2218  \\ \hline
-  5:00-5:30  & 3539  \\ \hline
-  5:30-6:00  & 1833  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 3:00 pm - 3:30 pm} }
+}
   
 \NEW{SignMedium}{\sConduitSix}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 4819  \\ \hline
-  2:30-3:00  & 8117  \\ \hline
-  3:00-3:30  & 8279  \\ \hline
-  3:30-4:00  & 2376  \\ \hline
-  4:00-4:30  & 5570  \\ \hline
-  4:30-5:00  & 6964  \\ \hline
-  5:00-5:30  & 2923  \\ \hline
-  5:30-6:00  & 4835  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 3:00 pm - 3:30 pm} }
+}
   
 \NEW{SignMedium}{\sConduitSeven}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 5709  \\ \hline
-  2:30-3:00  & 4656  \\ \hline
-  3:00-3:30  & 4114  \\ \hline
-  3:30-4:00  & 9253  \\ \hline
-  4:00-4:30  & 8538  \\ \hline
-  4:30-5:00  & 1140  \\ \hline
-  5:00-5:30  & 3916  \\ \hline
-  5:30-6:00  & 5426  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 3:30 pm - 4:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitEight}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 2321  \\ \hline
-  2:30-3:00  & 5399  \\ \hline
-  3:00-3:30  & 5331  \\ \hline
-  3:30-4:00  & 2435  \\ \hline
-  4:00-4:30  & 4305  \\ \hline
-  4:30-5:00  & 9863  \\ \hline
-  5:00-5:30  & 8981  \\ \hline
-  5:30-6:00  & 7745  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 3:30 pm - 4:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitNine}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30  & 4042 \\ \hline
-  2:30-3:00  & 7870 \\ \hline
-  3:00-3:30  & 7982 \\ \hline
-  3:30-4:00  & 2767 \\ \hline
-  4:00-4:30  & 4383 \\ \hline
-  4:30-5:00  & 6900 \\ \hline
-  5:00-5:30  & 8732 \\ \hline
-  5:30-6:00  & 3413 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 4:00 pm - 4:30 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitTen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 7048   \\ \hline
-  2:30-3:00 & 6015   \\ \hline
-  3:00-3:30 & 4511   \\ \hline
-  3:30-4:00 & 7884   \\ \hline
-  4:00-4:30 & 7792   \\ \hline
-  4:30-5:00 & 7423   \\ \hline
-  5:00-5:30 & 9098   \\ \hline
-  5:30-6:00 & 9824   \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 4:00 pm - 4:30 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitEleven}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 8961  \\ \hline
-  2:30-3:00 & 7920  \\ \hline
-  3:00-3:30 & 5283  \\ \hline
-  3:30-4:00 & 4591  \\ \hline
-  4:00-4:30 & 9124  \\ \hline
-  4:30-5:00 & 1461  \\ \hline
-  5:00-5:30 & 9322  \\ \hline
-  5:30-6:00 & 8739  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 4:30 pm - 5:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitTwelve}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 5789  \\ \hline
-  2:30-3:00 & 9135  \\ \hline
-  3:00-3:30 & 6844  \\ \hline
-  3:30-4:00 & 3873  \\ \hline
-  4:00-4:30 & 1449  \\ \hline
-  4:30-5:00 & 6331  \\ \hline
-  5:00-5:30 & 2444  \\ \hline
-  5:30-6:00 & 5561  \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 4:30 pm - 5:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitThirteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 3769 \\ \hline
-  2:30-3:00 & 5375 \\ \hline
-  3:00-3:30 & 4719 \\ \hline
-  3:30-4:00 & 4818 \\ \hline
-  4:00-4:30 & 8457 \\ \hline
-  4:30-5:00 & 4944 \\ \hline
-  5:00-5:30 & 7305 \\ \hline
-  5:30-6:00 & 5488 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 5:00 pm - 5:30 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitFourteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 4359   \\ \hline
-  2:30-3:00 & 9344   \\ \hline
-  3:00-3:30 & 8695   \\ \hline
-  3:30-4:00 & 3368   \\ \hline
-  4:00-4:30 & 1819   \\ \hline
-  4:30-5:00 & 5281   \\ \hline
-  5:00-5:30 & 3896   \\ \hline
-  5:30-6:00 & 2744   \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 5:00 pm - 5:30 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitFifteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 6840 \\ \hline
-  2:30-3:00 & 7955 \\ \hline
-  3:00-3:30 & 2796 \\ \hline
-  3:30-4:00 & 3711 \\ \hline
-  4:00-4:30 & 1716 \\ \hline
-  4:30-5:00 & 9637 \\ \hline
-  5:00-5:30 & 4621 \\ \hline
-  5:30-6:00 & 3409 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 5:30 pm - 6:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitSixteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 5931 \\ \hline
-  2:30-3:00 & 6762 \\ \hline
-  3:00-3:30 & 7524 \\ \hline
-  3:30-4:00 & 9055 \\ \hline
-  4:00-4:30 & 5842 \\ \hline
-  4:30-5:00 & 7790 \\ \hline
-  5:00-5:30 & 4730 \\ \hline
-  5:30-6:00 & 9740 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location will be the point of closest contact, and active for the purposes of opening the conduit from {\bf 5:30 pm - 6:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitSeventeen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 8691 \\ \hline
-  2:30-3:00 & 7803 \\ \hline
-  3:00-3:30 & 5059 \\ \hline
-  3:30-4:00 & 9688 \\ \hline
-  4:00-4:30 & 6520 \\ \hline
-  4:30-5:00 & 8374 \\ \hline
-  5:00-5:30 & 6365 \\ \hline
-  5:30-6:00 & 3215 \\ \hline
-\end{tabular}  } 
-  }
+  \s\MYtext	{This location was the point of closest contact, and active for the purposes of opening the conduit from {\bf 1:30 pm - 2:00 pm} } 
+}
   
 \NEW{SignMedium}{\sConduitEighteen}{
   \s\MYname	{A Possible Location of Conduit Contact}
   \s\MYloc	{}%%TBD
-  \s\MYtext	{To determine if this is the current location of closest contact with the elemental plane, search the chart below for the number associated with the current time. The number associated with the current time is the {\bf only} active number. You may only check the number for the time slot corresponding to the \textbf{current or next half-hour slot}.
-  
-\begin{tabular}{ l || l }
-  Time: & Active Number  \\ \hline \hline
-  2:00-2:30 & 1955  \\ \hline
-  2:30-3:00 & 9108  \\ \hline
-  3:00-3:30 & 9065  \\ \hline
-  3:30-4:00 & 1361  \\ \hline
-  4:00-4:30 & 4939  \\ \hline
-  4:30-5:00 & 9179  \\ \hline
-  5:00-5:30 & 6386  \\ \hline
-  5:30-6:00 & 8829  \\ \hline
-\end{tabular}   } 
-  }
+  \s\MYtext	{This location was the point of closest contact, and active for the purposes of opening the conduit from {\bf 1:00 pm - 1:30 pm} } 
+}
