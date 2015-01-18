@@ -221,10 +221,10 @@ Sincerely,\\
   \tricorder{2, 4}
 }
 
-\NEW{Iten}{\iHalfGeode}{%%Rogue and Loyal
-  \s\MYname	{Half of a Geode}
+\NEW{Item}{\iHalfGeode}{%%Rogue and Loyal
+  \s\MYname	{Half of a White Geode}
   \s\MYnumber	{213}
-  \s\MYtext	{This is half of a geode.  It feels unusually dense.}
+  \s\MYtext	{This is half of a white geode.  It feels unusually dense.}
   \tricorder{3}
 }
 
@@ -283,9 +283,9 @@ Sincerely,\\
 }
 
 \NEW{Item}{\iAziTape}{%%MS
-  \s\MYname	{Flash Drive with Azi Tape}
+  \s\MYname	{Flash Drive}
   \s\MYnumber	{151}
-  \s\MYtext	{A flash drive containing incomplete tape for the rapid reeducation of Azi.  You never know when it might come in handy. (This item is highly illegal and will arouse suspicion if discovered.)}
+  \s\MYtext	{A flash drive. Contact a GM if you have a way to determine what is on it.}
   \unstash{}
   %\bulky{1}
 }
@@ -300,9 +300,9 @@ Sincerely,\\
 
 %%leader's anti enslavement shield. he can of course give it to whoever he chooses
 \NEW{Item}{\iEleShield}{%%Leader (Enslavement Resist Item)
-  \s\MYname	{Prototype Anti-Enslavement Shield}
+  \s\MYname	{A Metal Bracelet}
   \s\MYnumber	{590}
-  \s\MYtext	{This is a prototype of a machine to allow Cits to resist elemental enslavement. Once every 30 minutes, this machine can be activated to resist elemental enslavement for 2 minutes. During the cool-down period, the machine must also be reset before it can be used again. To reset the shield, a scientist must devote 1 minute to fixing it (role-play accordingly).}
+  \s\MYtext	{There are a bunc of blinking lights, sort of like a watch.}
   \unstash{}
 }
 
@@ -314,10 +314,10 @@ Sincerely,\\
 }
 
 \NEW{ItemFold}{\iEleBelt}{%%Romeo
-  \s\MYname	{Non-Functional Elemental Protection Belt}
+  \s\MYname	{A Heavy Metal Belt}
   \s\MYnumber	{866}
-  \s\MYtext	{When functioning, this belt is supposed to protect the wearer from Elemental Attacks. {\bf Do not open unless directed to do so.}}
-  \s\MYcontents {{\bf The shield is now operational} and grants +3CR to defense against elementals who attack you. The item can be used by any human, although it provides \emph{no defense} against elemental enslavement.}
+  \s\MYtext	{A metal belt with blinking lights on it. {\bf Do not open unless directed to do so.}}
+  \s\MYcontents {{\bf The elemental shield is now operational} and grants +3CR to defense against elementals who attack you. The item can be used by any human, although it provides \emph{no defense} against elemental enslavement.}
 }
 
 %%Elemental Essences
@@ -325,7 +325,7 @@ Sincerely,\\
   \s\MYname	{Fire Elemental Essence}
   \s\MYnumber	{561}
   \s\MYtext	{{\large --BOUND--} This is a piece of fire elemental essence. 
-  It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  It is not transferable unless a mechanic specifically allows the transfer of Elemental Essence, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
   %\tricorder{1}
 }
 
@@ -333,7 +333,7 @@ Sincerely,\\
   \s\MYname	{Earth Elemental Essence}
   \s\MYnumber	{349}
   \s\MYtext	{{\large --BOUND--} This is a piece of earth elemental essence. 
-  It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  It is not transferable unless a mechanic specifically allows the transfer of Elemental Essence, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
   %\tricorder{3}
 }
 
@@ -341,7 +341,7 @@ Sincerely,\\
   \s\MYname	{Air Elemental Essence}
   \s\MYnumber	{829}
   \s\MYtext	{{\large --BOUND--} This is a piece of air elemental essence. 
-  It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  It is not transferable unless a mechanic specifically allows the transfer of Elemental Essence, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
   %\tricorder{4}
 }
 
@@ -349,7 +349,7 @@ Sincerely,\\
   \s\MYname	{Water Elemental Essence}
   \s\MYnumber	{313}
   \s\MYtext	{{\large --BOUND--} This is a piece of water elemental essence. 
-  It is not transferable unless it is taken via a specific mechanic, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+  It is not transferable unless a mechanic specifically allows the transfer of Elemental Essence, or the owner dies --- in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
   %\tricorder{2}
 }
 
@@ -357,7 +357,7 @@ Sincerely,\\
   \s\MYname	{Quintessence Elemental Essence}
   \s\MYnumber	{529}
   \s\MYtext	{{\large --BOUND--} This is a piece of quintessence elemental essence. 
- It is not transferable unless it is taken via a specific mechanic, or the owner dies - in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
+ It is not transferable unless a mechanic specifically allows the transfer of Elemental Essence, or the owner dies - in which case the essence becomes in-game transferable (in both cases, owner should cross out ``BOUND'').}
  %\tricorder{5}
 }
 
@@ -372,36 +372,18 @@ Sincerely,\\
 }
 
 %%Battery Making mechanic
-\NEW{ItemFold}{\iCopper}{%%Malachite
-  \s\MYname	{A piece of Malachite}
-  \s\MYnumber	{687}
-  \s\MYtext	{If you would like to extract pure copper from this item, hold it over a heat source (like lava or a fire elemental) for 10 seconds. Then open the item.}
-  \s\MYcontents	{This item is now a {\bf strip of copper}. Copper makes a good cathode for batteries.}
-}
-
-\NEW{Item}{\iZinc}{%%pile of shiny
-  \s\MYname	{A Piece of Zinc}
-  \s\MYnumber	{292}
-  \s\MYtext	{A strip of Zinc. It is highly reflective. Zinc makes a great anode for batteries.}
-}
 
 \NEW{Item}{\iBattery}{%%Chemical Stock Rooms (3)
-  \s\MYname	{A Small, Jury Rigged Battery}
+  \s\MYname	{A Small Battery}
   \s\MYnumber	{717}
-  \s\MYtext	{This battery can provide power to a machine for only a few minutes. Hopefully it will be enough.}
+  \s\MYtext	{This battery can provide power to a machine for a few minutes.}
 }
 
 %%Sealing the Conduit Locations Items
-\NEW{Item}{\iVial}{%%Glassware cabinet in Human HQ
-  \s\MYname	{A Small Glass Vial}
+\NEW{Item}{\iLockTight}{%%Janitors Closet
+  \s\MYname	{A Small Container of Purple Goo}
   \s\MYnumber	{998}%%Renumber later please
-  \s\MYtext	{This vial is perfect for small volumes of liquids.}
-}
-
-\NEW{Item}{\iSyringe}{%%Lab Ruins | Pile of TOols
-  \s\MYname	{A Syringe}
-  \s\MYnumber	{464}%%Renumber later please
-  \s\MYtext	{This syringe is sufficient for drawing blood from a human or elemental.}
+  \s\MYtext	{This purple goo is used for locking the threads of a screw so it doesn't loosen over time.}
 }
 
 %%Unsealing Conduit locations items
@@ -486,7 +468,7 @@ Sincerely,\\
   
   If this is inert or you are human: Yuck, this powder leaves a bad taste in your mouth but there are no other effects.
   
-  If you are an elemental: +1CR for 10 minutes. You feel extremely amiable toward the person who gave you this. \textbf{You can no longer enslave this person, and you cannot attack them unless provoked.} If you are a wounded elemental, administering Elementium heals you. You are now just knocked out.
+  If you are an elemental, and the ``inert'' has been crossed out: +1CR for 10 minutes. You feel extremely amiable toward the person who gave you this. \textbf{You can no longer enslave this person, and you cannot attack them unless provoked.} If you are a wounded elemental, administering Elementium heals you. You are now just knocked out.
   }
   \unstash{}
   \tricorder{5}
@@ -514,9 +496,9 @@ Sincerely,\\
 }
 
 \NEW{Item}{\iControlRod}{%%Control rod for mad scientist
-  \s\MYname	{Prototype Control Rod}
+  \s\MYname	{Prototype Handheld Device}
   \s\MYnumber	{699}
-  \s\MYtext	{A large metallic rod with dials, flashing lights, and electrical wiring all over it.  It's not even clear how to hold it without getting electrocuted...but it's functionality and not aesthetics that counts, isn't it?  Besides, it's just a prototype.  There's plenty of time to make it pretty later.}
+  \s\MYtext	{A large metallic rod with dials, flashing lights, and electrical wiring all over it.  It's not even clear how to hold it without getting electrocuted...}
   \bulky{1}
   \physrepped{}
 }
@@ -530,7 +512,7 @@ Sincerely,\\
   \unstash{}
 }
 
-\NEW{ItemFold}{\iCrystalGeode}{%%Pile Of Rocks (sGeodes) | Cellar
+\NEW{ItemFold}{\iCrystalGeode}{%%Pile Of Rocks (sGeodes) | Cellar  %%Can be used as a battery with help from an earth Elemental
   \s\MYname	{A Grey Rock}
   \s\MYnumber	{692}
   \s\MYtext	{A heavy, spherical piece of rock; it is ugly, grey, and pitted. {\bf If you would like to break it open, hit it with a CR 4+ attack. If you do so, open the item}}
@@ -545,11 +527,17 @@ Sincerely,\\
   \s\MYcontents {You break open the stone and see that {\bf it is not a Geode}. It is just a dull, solid rock.}
   \bulky{1}
 }
-
-\NEW{Item}{\iLavaEmber}{%%Lava Pool | Kitchen
+\NEW{Item}{\iLavaEmber}{%%Lava Pool | Kitchen %%Can be used as a battery with help from a fire elemental
   \s\MYname	{Lava Ember}
   \s\MYnumber	{712}
   \s\MYtext	{A palm-sized piece of stone that glows deep orange and feels warm to the touch.}
+  \bulky{1}
+}
+
+\NEW{Item}{\iHandCrank}{%%?? | Air HQ %%Can be used as a battery with help from an air elemental
+  \s\MYname	{A Hand Crank}
+  \s\MYnumber	{713}
+  \s\MYtext	{A small hand crank.}
   \bulky{1}
 }
 
